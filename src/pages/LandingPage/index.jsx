@@ -1,7 +1,12 @@
-export default function LandingPage() {
-  return(
+function LandingPage() {
+  return (
     <>
-      test
+      <div>
+        <h1>MEMESTEAK</h1>
+        <button>PRESS ANY KEY TO CONTINUE</button>
+      </div>
     </>
-  )
+  );
 }
+
+export default LandingPage;
