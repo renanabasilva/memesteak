@@ -1,5 +1,11 @@
 import ArrowButton from "../../components/ArrowButton";
 
+// TODO:
+// - style
+// - useState para trocar a imagem
+// - função para trocar item selecionado pelas setas e selecionar com enter
+// - useEffect para animação da seleção ativa
+
 function Dashboard() {
 
   const pages = [
