@@ -1,18 +1,27 @@
+GERAL
+  - Adicionar fonte do google
+
+---
+
 LANDING PAGE
   
   - Alterar botão "press any key" utilizando o componente "DoubleArrowButton"
 
+---
 
 DASHBOARD 
 
-  - style
   - useState para trocar a imagem
   - função para trocar item selecionado pelas setas e selecionar com enter
   - useEffect para animação da seleção ativa
 
+---
+
 VAULTS
 
   - Botão "select this vault" função para popup
+
+---
 
 STEAKPAD
 
@@ -20,8 +29,12 @@ STEAKPAD
   - Criar formulário "Contact Us"
   - Popup "comming soon" ao clicar no TokenCard
 
+---
+
 COOKBOOK
   - Adicionar conteúdo (hold)
+
+---
 
 COMPONENTES
 
