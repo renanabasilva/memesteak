@@ -1,0 +1,18 @@
+LANDING PAGE
+
+
+DASHBOARD 
+
+  - style
+  - useState para trocar a imagem
+  - função para trocar item selecionado pelas setas e selecionar com enter
+  - useEffect para animação da seleção ativa
+
+VAULTS
+
+  - Botão "select this vault" função para popup
+
+COMPONENTES
+
+  ArrowButton
+    - Criar componente para link de navegação, manter apenas o estilo do botão no componente.

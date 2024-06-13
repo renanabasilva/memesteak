@@ -4,22 +4,22 @@ import style from "./LandingPage.module.css"
 
 function LandingPage() {
 
-  // const navigate = useNavigate();
-  // const functionKeyRegex = /^F(1[0-2]?|[2-9])$/;
+  const navigate = useNavigate();
+  const functionKeyRegex = /^F(1[0-2]?|[2-9])$/;
 
-  // useEffect(() => {
-  //   const handleKeyPress = (event) => {
-  //     if(!functionKeyRegex.test(event.key)){
-  //       navigate('/dashboard');
-  //     }
-  //   };
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if(!functionKeyRegex.test(event.key)){
+        navigate('/dashboard');
+      }
+    };
 
-  //   window.addEventListener('keydown', handleKeyPress);
+    window.addEventListener('keydown', handleKeyPress);
 
-  //   return () => {
-  //     window.removeEventListener('keydown', handleKeyPress);
-  //   };
-  // });
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  });
 
   return (
     <>
