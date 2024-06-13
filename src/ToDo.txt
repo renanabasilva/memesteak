@@ -27,3 +27,6 @@ COMPONENTES
 
   ArrowButton && DoubleArrowButton
     - Criar componente com opção de link de navegação ou popup, manter apenas o estilo do botão no componente.
+
+  PopUp "Join Community"
+    - Criar componente popup com o formulário de contato

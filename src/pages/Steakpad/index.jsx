@@ -1,3 +1,4 @@
+import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import Header from "../../components/Header";
 import TokenCard from "../../components/TokenCard";
@@ -6,6 +7,7 @@ function Steakpad() {
   return (
     <main>
       <Header />
+      <ContactPopUpForm />
       <section>
         <div>
           <h1>STEAKPAD</h1>
