@@ -1,4 +1,6 @@
 LANDING PAGE
+  
+  - Alterar botão "press any key" utilizando o componente "DoubleArrowButton"
 
 
 DASHBOARD 
@@ -18,7 +20,10 @@ STEAKPAD
   - Criar formulário "Contact Us"
   - Popup "comming soon" ao clicar no TokenCard
 
+COOKBOOK
+  - Adicionar conteúdo (hold)
+
 COMPONENTES
 
-  ArrowButton
-    - Criar componente para link de navegação, manter apenas o estilo do botão no componente.
+  ArrowButton && DoubleArrowButton
+    - Criar componente com opção de link de navegação ou popup, manter apenas o estilo do botão no componente.
