@@ -1,10 +1,10 @@
 function Steakpad() {
   return (
-    <>
-      <div>
+    <main>
+      <section>
         <h1>STEAKPAD</h1>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

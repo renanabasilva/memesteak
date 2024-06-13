@@ -18,8 +18,8 @@ function Dashboard() {
   ]
 
   return (
-    <>
-      <div>
+    <main>
+      <section>
         <h1>DASHBOARD</h1>
         <div>
           <div>
@@ -38,8 +38,8 @@ function Dashboard() {
         <footer>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta vitae, enim, delectus alias ducimus corporis sequi natus libero numquam recusandae amet dolores modi temporibus aspernatur odit praesentium distinctio est!</p>
         </footer>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

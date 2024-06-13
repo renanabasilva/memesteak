@@ -22,13 +22,13 @@ function LandingPage() {
   });
 
   return (
-    <>
-      <div className={style.mainContainer}>
+    <main>
+      <section className={style.mainContainer}>
         <h1 className={style.title}>MEMESTEAK</h1>
         <NavLink to="/dashboard" className={style.button}>PRESS ANY KEY TO CONTINUE</NavLink>
         <div className={style.imgContainer}></div>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

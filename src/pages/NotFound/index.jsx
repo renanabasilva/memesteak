@@ -1,10 +1,10 @@
 function NotFound() {
   return (
-    <>
-      <div>
+    <main>
+      <section>
         <h1>404</h1>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

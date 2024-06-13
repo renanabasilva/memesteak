@@ -1,10 +1,10 @@
 function Cookbook() {
   return (
-    <>
-      <div>
+    <main>
+      <section>
         <h1>COOKBOOK</h1>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

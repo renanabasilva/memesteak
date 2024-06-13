@@ -1,10 +1,10 @@
 function Community() {
   return (
-    <>
-      <div>
+    <main>
+      <section>
         <h1>COMMUNITY</h1>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 
