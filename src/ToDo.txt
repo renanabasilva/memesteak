@@ -12,6 +12,12 @@ VAULTS
 
   - Botão "select this vault" função para popup
 
+STEAKPAD
+
+  - Links Join Pool
+  - Criar formulário "Contact Us"
+  - Popup "comming soon" ao clicar no TokenCard
+
 COMPONENTES
 
   ArrowButton
