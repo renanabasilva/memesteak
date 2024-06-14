@@ -1,0 +1,19 @@
+.button {
+  background-color: transparent;
+  border: none;
+  color: #2fc53e;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  color: #6afc79;
+  text-shadow: 0 0 3px #84f88f;
+  transition: all 0.3s;
+}
+
+.button::before {
+  content: "►";
+  margin-right: 10px;
+}

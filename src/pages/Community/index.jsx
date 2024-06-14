@@ -1,6 +1,7 @@
 import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import Header from "../../components/Header";
+import NavigationLink from "../../components/NavigationLink";
 import SocialLink from "../../components/SocialLink";
 
 const socialNetworks = [
@@ -38,10 +39,14 @@ function Community() {
             />
           ))}
         </div>
-        <p>Also a icon for influencers, we want it so when they click it, it makes a  form pop up with info for them to fill, again we'll provide what we  need in the form.</p>
-        <DoubleArrowButton>
-          JOIN THE COMMUNITY
-        </DoubleArrowButton>
+        <p>
+          Also a icon for influencers, we want it so when they click it, it
+          makes a form pop up with info for them to fill, again we'll provide
+          what we need in the form.
+        </p>
+        <NavigationLink linkType="external" link="https://www.google.com">
+          <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+        </NavigationLink>
       </section>
     </main>
   );

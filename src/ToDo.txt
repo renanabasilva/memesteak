@@ -1,11 +1,12 @@
 GERAL
   - Adicionar fonte do google
-
+  - Criar navegação utilizando as setas do teclado
+  
 ---
 
 LANDING PAGE
   
-  - Alterar botão "press any key" utilizando o componente "DoubleArrowButton"
+
 
 ---
 
@@ -40,6 +41,7 @@ COMPONENTES
 
   ArrowButton && DoubleArrowButton
     - Criar componente com opção de link de navegação ou popup, manter apenas o estilo do botão no componente.
+    - Colocar seta apenas quando selecionado
 
   PopUp "Join Community"
     - Criar componente popup com o formulário de contato
