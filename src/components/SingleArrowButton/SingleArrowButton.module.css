@@ -1,17 +1,22 @@
 .button {
-  background-color: transparent;
-  border: none;
-  color: #2fc53e;
+  position: relative;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  font-family: var(--titleFont);
+  font-size: 1.3rem;
+  /* padding: 0; */
 
   &:hover,
   &:focus {
-    color: #6afc79;
+    color: var(--greenHover);
     text-shadow: 0 0 3px #84f88f;
 
     &::before {
+      position: absolute;
       content: "►";
-      margin-right: 10px;
+      left: -20px;
     }
   }
 }

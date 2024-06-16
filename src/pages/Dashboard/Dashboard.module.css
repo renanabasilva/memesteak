@@ -1,0 +1,48 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.contentSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.titleIllustration {
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menuTitle {
+  font-family: var(--titleFont);
+  font-size: 1.4rem;
+}
+
+.menuOptions {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.description {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 650px;
+}

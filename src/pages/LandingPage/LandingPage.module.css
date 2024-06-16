@@ -9,12 +9,11 @@
 }
 
 .titleIllustration {
-  /* margin-top: 1rem; */
   width: 100%;
+  max-width: 690px;
 }
 
 .spotIllustration {
-  /* margin-top: 1rem; */
   margin: 1rem 0;
   width: 90%;
   max-width: 350px;

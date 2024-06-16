@@ -1,13 +1,15 @@
 .button {
   background-color: transparent;
   border: none;
-  color: #2fc53e;
+  font-family: var(--titleFont);
+  font-size: 1.3rem;
+  color: var(--green);
   cursor: pointer;
   transition: all 0.2s;
 
   &:hover,
   &:focus {
-    color: #6afc79;
+    color: var(--greenHover);
     text-shadow: 0 0 3px #84f88f;
     transition: all 0.2s;
   }
