@@ -1,5 +1,4 @@
 GERAL
-  - Adicionar fonte do google
   - Criar navegação utilizando as setas do teclado
   
 ---

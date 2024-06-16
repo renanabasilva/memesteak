@@ -3,24 +3,24 @@
   border: none;
   color: #2fc53e;
   cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s;
-}
+  transition: all 0.2s;
 
-.button:hover {
-  color: #6afc79;
-  text-shadow: 0 0 3px #84f88f;
-  transition: all 0.3s;
-}
+  &:hover,
+  &:focus {
+    color: #6afc79;
+    text-shadow: 0 0 3px #84f88f;
+    transition: all 0.2s;
+  }
 
-.button:hover::before,
-.button:focus::before {
-  content: "►";
-  margin-right: 10px;
-}
+  &::before,
+  &::before {
+    content: "►";
+    margin-right: 10px;
+  }
 
-.button:hover::after,
-.button:focus::after {
-  content: "◄";
-  margin-left: 10px;
+  &::after,
+  &::after {
+    content: "◄";
+    margin-left: 10px;
+  }
 }
