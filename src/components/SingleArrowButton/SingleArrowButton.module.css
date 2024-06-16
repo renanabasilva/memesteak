@@ -7,13 +7,11 @@
   transition: all 0.3s;
 }
 
-.button:hover {
+.button:hover::before,
+.button:focus::before {
   color: #6afc79;
   text-shadow: 0 0 3px #84f88f;
   transition: all 0.3s;
-}
-
-.button::before {
   content: "►";
   margin-right: 10px;
 }

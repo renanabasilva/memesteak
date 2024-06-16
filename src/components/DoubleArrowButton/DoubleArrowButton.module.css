@@ -13,12 +13,14 @@
   transition: all 0.3s;
 }
 
-.button::before {
+.button:hover::before,
+.button:focus::before {
   content: "►";
   margin-right: 10px;
 }
 
-.button::after {
+.button:hover::after,
+.button:focus::after {
   content: "◄";
   margin-left: 10px;
 }
