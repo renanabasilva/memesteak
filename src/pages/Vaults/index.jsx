@@ -1,31 +1,32 @@
 import { useState } from "react";
+import styles from "./Vaults.module.css"
 import Header from "../../components/Header";
 import VaultIcon from "../../components/VaultIcon";
 
 const vaults = [
   {
     name: "PAPER HANDS",
-    img: "/",
+    img: require("../../assets/hand_iron_300.png"),
     description: "PAPER HANDS TEXT DESCRIPTION"
   },
   {
     name: "IRON HANDS",
-    img: "/",
+    img: require("../../assets/hand_iron_300.png"),
     description: "IRON HANDS TEXT DESCRIPTION"
   },
   {
     name: "GOLDEN HANDS",
-    img: "/",
+    img: require("../../assets/hand_iron_300.png"),
     description: "GOLDEN HANDS TEXT DESCRIPTION"
   },
   {
     name: "DIAMOND HANDS",
-    img: "/",
+    img: require("../../assets/hand_iron_300.png"),
     description: "DIAMOND HANDS TEXT DESCRIPTION"
   },
   {
     name: "INFINITY GAUNTLETS",
-    img: "/",
+    img: require("../../assets/hand_iron_300.png"),
     description: "INFINITY GAUNTLETS TEXT DESCRIPTION"
   }
 ]
@@ -36,9 +37,9 @@ function Vaults() {
   return (
     <main>
       <Header />
-      <section>
-        <h1>VAULTS</h1>
-        <div>
+      <section className={styles.mainContainer}>
+        <h1 className={styles.menuTitle}>VAULTS</h1>
+        <div className={styles.vaultsContainer}>
           {vaults.map((vault, index) =>(
             <div key={index} onClick={() => setActiveVault(vault)}>
               <VaultIcon

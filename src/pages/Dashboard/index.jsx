@@ -1,4 +1,4 @@
-import styles from "./Dashboard.module.css"
+import styles from "./Dashboard.module.css";
 import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
 import SingleArrowButton from "../../components/SingleArrowButton";
 import NavigationLink from "../../components/NavigationLink";
@@ -24,10 +24,10 @@ function Dashboard() {
       <section className={styles.contentSection}>
         {/* <h1>MEMESTEAK</h1> */}
         <img
-            className={styles.titleIllustration}
-            src={SkewedLogo}
-            alt="Memesteak skewed logo"
-          />
+          className={styles.titleIllustration}
+          src={SkewedLogo}
+          alt="Memesteak skewed logo"
+        />
         <div className={styles.menuContainer}>
           <div>
             <h3 className={styles.menuTitle}>SELECT GAME</h3>

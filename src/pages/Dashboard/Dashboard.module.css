@@ -29,15 +29,15 @@
 }
 
 .menuTitle {
+  margin: 0;
   font-family: var(--titleFont);
+  font-weight: 400;
   font-size: 1.4rem;
 }
 
 .menuOptions {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  gap: 0.5rem;
   padding: 0;
 }
 
