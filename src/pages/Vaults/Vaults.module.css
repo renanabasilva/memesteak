@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 1rem;
   gap: 2rem;
 }
 
@@ -40,5 +39,13 @@
 @media (max-width: 720px) {
   .vaultsContainer {
     flex-wrap: wrap;
+  }
+
+  .vaultsDescriptionContainer{
+    flex-direction: column;
+  }
+
+  .vaultsDescriptionSideContainer{
+    align-items: center;
   }
 }

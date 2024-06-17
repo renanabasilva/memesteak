@@ -28,6 +28,7 @@ STEAKPAD
   - Links Join Pool?
   - Criar formulário "Contact Us"
   - Popup "comming soon" ao clicar no TokenCard
+  - Carrosel TokenCard?
 
 ---
 
