@@ -1,17 +1,15 @@
 import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
-import Header from "../../components/Header";
 import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
 
 function Steakpad() {
   return (
     <main>
-      <Header />
       <ContactPopUpForm />
       <section>
         <div>
-          <h1>STEAKPAD</h1>
+          <h1 className="page-title">STEAKPAD</h1>
           <p>
             Memesteak description and info. Memesteak description and info.
             Memesteak description and info. Memesteak description and info.

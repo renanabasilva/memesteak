@@ -1,63 +1,68 @@
 import { useState } from "react";
-import styles from "./Vaults.module.css"
-import Header from "../../components/Header";
+import styles from "./Vaults.module.css";
 import VaultIcon from "../../components/VaultIcon";
+import SingleArrowButton from "../../components/SingleArrowButton";
 
 const vaults = [
   {
     name: "PAPER HANDS",
-    img: require("../../assets/hand_iron_300.png"),
-    description: "PAPER HANDS TEXT DESCRIPTION"
+    img: "paper",
+    description: "PAPER HANDS TEXT DESCRIPTION",
   },
   {
     name: "IRON HANDS",
-    img: require("../../assets/hand_iron_300.png"),
-    description: "IRON HANDS TEXT DESCRIPTION"
+    img: "iron",
+    description: "IRON HANDS TEXT DESCRIPTION",
   },
   {
     name: "GOLDEN HANDS",
-    img: require("../../assets/hand_iron_300.png"),
-    description: "GOLDEN HANDS TEXT DESCRIPTION"
+    img: "gold",
+    description: "GOLDEN HANDS TEXT DESCRIPTION",
   },
   {
     name: "DIAMOND HANDS",
-    img: require("../../assets/hand_iron_300.png"),
-    description: "DIAMOND HANDS TEXT DESCRIPTION"
+    img: "diamond",
+    description: "DIAMOND HANDS TEXT DESCRIPTION",
   },
   {
     name: "INFINITY GAUNTLETS",
-    img: require("../../assets/hand_iron_300.png"),
-    description: "INFINITY GAUNTLETS TEXT DESCRIPTION"
-  }
-]
+    img: "infinity",
+    description: "INFINITY GAUNTLETS TEXT DESCRIPTION",
+  },
+];
 
 function Vaults() {
-
   const [activeVault, setActiveVault] = useState(vaults[0]);
   return (
-    <main>
-      <Header />
-      <section className={styles.mainContainer}>
-        <h1 className={styles.menuTitle}>VAULTS</h1>
-        <div className={styles.vaultsContainer}>
-          {vaults.map((vault, index) =>(
-            <div key={index} onClick={() => setActiveVault(vault)}>
-              <VaultIcon
-                name={vault.name}
-                img={vault.img}
-              />
-            </div>
-          ))}
-        </div>
-        <div>
-          <img src={activeVault.img} alt={activeVault.name} />
-          <div>
-            <p>{activeVault.description}</p>
-            <button>SELECT THIS VAULT</button>
+    <section className="main-container">
+      <h1 className="page-title">VAULTS</h1>
+      <div className={styles.vaultsContainer}>
+        {vaults.map((vault, index) => (
+          <div key={index} onClick={() => setActiveVault(vault)}>
+            <VaultIcon name={vault.name} img={vault.img} />
+          </div>
+        ))}
+      </div>
+      <div className={styles.vaultsDescriptionContainer}>
+        <img
+          className={styles.border}
+          src={require(`../../assets/images/hand_${activeVault.img}_300.png`)}
+          alt={activeVault.name}
+        />
+        <div className={styles.vaultsDescriptionSideContainer}>
+          <p>
+            {" "}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+            dolores molestias inventore praesentium, ex quod, magni placeat iste
+            veritatis nisi consequuntur non expedita eum, fuga beatae unde
+            facilis iusto nobis! {activeVault.description}
+          </p>
+          <div className={styles.vaultButton}>
+            <SingleArrowButton>SELECT THIS VAULT</SingleArrowButton>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
 

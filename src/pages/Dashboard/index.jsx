@@ -36,7 +36,7 @@ function Dashboard() {
                 <NavigationLink
                   key={index}
                   linkType="internal"
-                  link={`/${page.name}`}
+                  link={`/${page.name.toLowerCase()}`}
                 >
                   <SingleArrowButton>{page.name}</SingleArrowButton>
                 </NavigationLink>

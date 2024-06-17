@@ -1,0 +1,16 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--titleFont);
+  font-weight: 400;
+  font-size: 4rem;
+}

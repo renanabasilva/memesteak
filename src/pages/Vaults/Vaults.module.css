@@ -1,0 +1,44 @@
+.vaultsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  gap: 2rem;
+}
+
+.vaultsDescriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  min-height: 230px;
+  width: 90vw;
+  max-width: 840px;
+}
+
+.border {
+  margin: 0.2rem;
+  border: 7px double #8b8fae;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.vaultsDescriptionSideContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.vaultButton {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .vaultsContainer {
+    flex-wrap: wrap;
+  }
+}

@@ -19,7 +19,7 @@ DASHBOARD
 
 VAULTS
 
-  
+  - Deixar pré selecionado (em focus) paper hands
 
 ---
 
