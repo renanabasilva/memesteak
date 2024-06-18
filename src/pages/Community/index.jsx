@@ -1,7 +1,5 @@
-import ContactForm from "../../components/ContactForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import NavigationLink from "../../components/NavigationLink";
-import PopUpContainer from "../../components/PopUpContainer";
 import SocialLink from "../../components/SocialLink";
 
 const socialNetworks = [
@@ -45,9 +43,6 @@ function Community() {
         <NavigationLink linkType="external" link="https://www.google.com">
           <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
         </NavigationLink>
-        <PopUpContainer>
-          <ContactForm />
-        </PopUpContainer>
       </section>
     </main>
   );

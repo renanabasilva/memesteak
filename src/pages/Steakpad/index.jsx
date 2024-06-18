@@ -2,6 +2,8 @@ import styles from "./Steakpad.module.css";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
+import PopUpContainer from "../../components/PopUpContainer";
+import ContactForm from "../../components/ContactForm";
 
 function Steakpad() {
   return (
@@ -28,9 +30,11 @@ function Steakpad() {
             If they have a project they'd like to launch on our platform to get
             in touch with a button they can press to fill a basic form out.
           </p>
-          <NavigationLink linkType="external" link="/steakpad">
+          <PopUpContainer
+            popUpTarget={<ContactForm />}
+          >
             <DoubleArrowButton>CONTACT US</DoubleArrowButton>
-          </NavigationLink>
+          </PopUpContainer>
         </footer>
       </section>
     </main>
