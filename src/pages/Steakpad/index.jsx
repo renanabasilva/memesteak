@@ -1,3 +1,4 @@
+import styles from "./Steakpad.module.css";
 import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import TokenCard from "../../components/TokenCard";
@@ -7,8 +8,8 @@ function Steakpad() {
   return (
     <main>
       <ContactPopUpForm />
-      <section>
-        <div>
+      <section className="main-container">
+        <div className="center">
           <h1 className="page-title">STEAKPAD</h1>
           <p>
             Memesteak description and info. Memesteak description and info.
@@ -19,12 +20,12 @@ function Steakpad() {
             <DoubleArrowButton>JOIN POOL</DoubleArrowButton>
           </NavigationLink>
         </div>
-        <div>
+        <div className={styles.tokenCardContainer}>
           <TokenCard />
           <TokenCard />
           <TokenCard />
         </div>
-        <footer>
+        <footer className="center">
           <p>
             If they have a project they'd like to launch on our platform to get
             in touch with a button they can press to fill a basic form out.
