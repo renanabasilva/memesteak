@@ -1,5 +1,4 @@
 import ContactForm from "../../components/ContactForm";
-import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
@@ -26,9 +25,8 @@ const socialNetworks = [
 function Community() {
   return (
     <main>
-      <ContactPopUpForm />
-      <section>
-        <h1>COMMUNITY</h1>
+      <section className="main-container">
+        <h1 className="page-title">COMMUNITY</h1>
         <div>
           {socialNetworks.map((social, index) => (
             <SocialLink

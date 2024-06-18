@@ -1,5 +1,4 @@
 import styles from "./Steakpad.module.css";
-import ContactPopUpForm from "../../components/ContactPopUpForm";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
@@ -7,7 +6,6 @@ import NavigationLink from "../../components/NavigationLink";
 function Steakpad() {
   return (
     <main>
-      <ContactPopUpForm />
       <section className="main-container">
         <div className="center">
           <h1 className="page-title">STEAKPAD</h1>
