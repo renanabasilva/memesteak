@@ -1,0 +1,33 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.inputContainer > label {
+  width: 90px;
+  text-align: justify;
+}
+
+.inputContainer > input {
+  flex: 1;
+  border: 2px solid var(--green);
+  background-color: #000;
+}
+
+.formButtonContainer {
+  text-align: end;
+}

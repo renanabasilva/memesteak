@@ -1,6 +1,7 @@
 GERAL
   - Criar navegação utilizando as setas do teclado
-  
+  - Scrollbar layout
+
 ---
 
 LANDING PAGE
@@ -26,8 +27,6 @@ VAULTS
 STEAKPAD
 
   - Links Join Pool?
-  - Criar formulário "Contact Us"
-  - Popup "comming soon" ao clicar no TokenCard
   - Carrosel TokenCard?
 
 ---
@@ -43,8 +42,6 @@ COMPONENTES
     - Criar componente com opção de link de navegação ou popup, manter apenas o estilo do botão no componente.
     - Colocar seta apenas quando selecionado
 
-  PopUpContainer
-    - Criar funcionalidade de fechar ao clicar fora, clicar no x ou envio de formulário
-
   formulário
     - Quais informações estarão no formulário?
+    - Criar função para submissão de formulário

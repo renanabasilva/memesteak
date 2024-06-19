@@ -4,7 +4,7 @@ import PopUpContainer from "../PopUpContainer";
 
 function TokenCard() {
   return (
-    <PopUpContainer popUpTarget={<p className="page-title">COMMING SOON</p>}>
+    <PopUpContainer popUpTarget={<p className="page-title">COMMING SOON...</p>}>
       <button className={styles.tokenCardContainer}>
         <img src={placeholder} alt="" />
         <div>
