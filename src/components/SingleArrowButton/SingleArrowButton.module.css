@@ -12,6 +12,7 @@
   &:focus {
     color: var(--greenHover);
     text-shadow: 0 0 3px #84f88f;
+    outline: none;
 
     &::before {
       position: absolute;

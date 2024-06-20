@@ -1,9 +1,58 @@
-import styles from "./Steakpad.module.css";
+// import styles from "./Steakpad.module.css";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
-import TokenCard from "../../components/TokenCard";
+// import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
+import Carousel from "../../components/Carousel";
+
+const cards = [
+  {
+    ticker: "Ticker1",
+    chain: "Chain",
+    price: "Price",
+    ido_date: "IDO Date",
+    tge: "TGE",
+    cliff: "Cliff",
+    vesting: "Vesting",
+  },
+  {
+    ticker: "Ticker2",
+    chain: "Chain",
+    price: "Price",
+    ido_date: "IDO Date",
+    tge: "TGE",
+    cliff: "Cliff",
+    vesting: "Vesting",
+  },
+  {
+    ticker: "Ticker3",
+    chain: "Chain",
+    price: "Price",
+    ido_date: "IDO Date",
+    tge: "TGE",
+    cliff: "Cliff",
+    vesting: "Vesting",
+  },
+  {
+    ticker: "Ticker4",
+    chain: "Chain",
+    price: "Price",
+    ido_date: "IDO Date",
+    tge: "TGE",
+    cliff: "Cliff",
+    vesting: "Vesting",
+  },
+  {
+    ticker: "Ticker5",
+    chain: "Chain",
+    price: "Price",
+    ido_date: "IDO Date",
+    tge: "TGE",
+    cliff: "Cliff",
+    vesting: "Vesting",
+  },
+]
 
 function Steakpad() {
   return (
@@ -20,11 +69,7 @@ function Steakpad() {
             <DoubleArrowButton>JOIN POOL</DoubleArrowButton>
           </NavigationLink>
         </div>
-        <div className={styles.tokenCardContainer}>
-          <TokenCard />
-          <TokenCard />
-          <TokenCard />
-        </div>
+        <Carousel cards={cards} />
         <footer className="center">
           <p>
             If they have a project they'd like to launch on our platform to get

@@ -8,8 +8,10 @@
   &:hover,
   &:focus {
     border-color: var(--greenHover);
-    box-shadow: 0 0 5px var(--greenHover);
+    box-shadow: 0 0 10px var(--greenHover);
     cursor: pointer;
+    outline: none;
+    transform: scale(1.1);
   }
 }
 
