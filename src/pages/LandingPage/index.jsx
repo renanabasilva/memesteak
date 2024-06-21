@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./LandingPage.module.css";
 import NavigationLink from "../../components/NavigationLink";
-import DoubleArrowButton from "../../components/DoubleArrowButton";
 import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
 import ChefGif from "../../assets/chef.gif";
 
@@ -27,14 +26,13 @@ function LandingPage() {
   return (
     <main>
       <section className={styles.mainContainer}>
-        {/* <h1 className={styles.title}>MEMESTEAK</h1> */}
-          <img
-            className={styles.titleIllustration}
-            src={SkewedLogo}
-            alt="Memesteak skewed logo"
-          />
-        <NavigationLink linkType="internal" link="/dashboard">
-          <DoubleArrowButton>PRESS ANY KEY TO CONTINUE</DoubleArrowButton>
+        <img
+          className={styles.titleIllustration}
+          src={SkewedLogo}
+          alt="Memesteak skewed logo"
+        />
+        <NavigationLink double linkType="internal" link="/dashboard">
+          PRESS ANY KEY TO CONTINUE
         </NavigationLink>
         <img
           className={styles.spotIllustration}

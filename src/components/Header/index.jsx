@@ -1,25 +1,24 @@
-import { NavLink } from "react-router-dom";
-import styles from "./Header.module.css"
-import PlainLogo from "../../assets/memesteak_logo.gif"
-import SingleArrowButton from "../SingleArrowButton";
+import styles from "./Header.module.css";
+import PlainLogo from "../../assets/memesteak_logo.gif";
+import NavigationLink from "../NavigationLink";
 
 function Header() {
-  return(
+  return (
     <header className={styles.mainContainer}>
       {/* <h1>MEMESTEAK</h1> */}
       <img
-            className={styles.plainLogo}
-            src={PlainLogo}
-            alt="Memesteak skewed logo"
-          />
+        className={styles.plainLogo}
+        src={PlainLogo}
+        alt="Memesteak skewed logo"
+      />
       <img src="" alt="" />
-      <NavLink className={styles.backButton} to={"/dashboard"}>
-        <SingleArrowButton>
+      <div className={styles.backButton}>
+        <NavigationLink linkType="internal" link="/dashboard">
           BACK TO MENU
-        </SingleArrowButton>
-      </NavLink>
+        </NavigationLink>
+      </div>
     </header>
-  )
+  );
 }
 
 export default Header;

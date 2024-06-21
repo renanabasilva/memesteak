@@ -4,7 +4,6 @@ import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
-// import Carousel from "../../components/Carousel";
 
 const cards = [
   {
@@ -52,7 +51,7 @@ const cards = [
   //   cliff: "Cliff",
   //   vesting: "Vesting",
   // },
-]
+];
 
 function Steakpad() {
   return (
@@ -65,23 +64,22 @@ function Steakpad() {
             Memesteak description and info. Memesteak description and info.
             Memesteak description.
           </p>
-          <NavigationLink linkType="external" link="/steakpad">
-            <DoubleArrowButton>JOIN POOL</DoubleArrowButton>
+          <NavigationLink double linkType="external" link="/steakpad">
+            JOIN POOL
           </NavigationLink>
         </div>
-        {/* <Carousel cards={cards} /> */}
         <div className={styles.tokenCardContainer}>
           {cards.map((card, index) => (
-            <TokenCard 
-            key={index}
-            ticker= {card.ticker}
-            chain= {card.chain}
-            price= {card.price}
-            ido_date= {card.ido_date}
-            tge= {card.tge}
-            cliff= {card.cliff}
-            vesting= {card.vesting}
-          />
+            <TokenCard
+              key={index}
+              ticker={card.ticker}
+              chain={card.chain}
+              price={card.price}
+              ido_date={card.ido_date}
+              tge={card.tge}
+              cliff={card.cliff}
+              vesting={card.vesting}
+            />
           ))}
         </div>
         <footer className="center">
@@ -89,9 +87,7 @@ function Steakpad() {
             If they have a project they'd like to launch on our platform to get
             in touch with a button they can press to fill a basic form out.
           </p>
-          <PopUpContainer
-            popUpTarget={<ContactForm />}
-          >
+          <PopUpContainer popUpTarget={<ContactForm />}>
             <DoubleArrowButton>CONTACT US</DoubleArrowButton>
           </PopUpContainer>
         </footer>

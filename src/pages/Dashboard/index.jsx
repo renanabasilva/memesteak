@@ -1,6 +1,5 @@
 import styles from "./Dashboard.module.css";
 import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
-import SingleArrowButton from "../../components/SingleArrowButton";
 import NavigationLink from "../../components/NavigationLink";
 
 function Dashboard() {
@@ -38,7 +37,7 @@ function Dashboard() {
                   linkType="internal"
                   link={`/${page.name.toLowerCase()}`}
                 >
-                  <SingleArrowButton>{page.name}</SingleArrowButton>
+                  {page.name}
                 </NavigationLink>
               ))}
             </ul>

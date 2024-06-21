@@ -12,6 +12,7 @@
     color: var(--greenHover);
     text-shadow: 0 0 3px #84f88f;
     transition: all 0.2s;
+    outline: none;
   }
 
   &::before,

@@ -1,4 +1,3 @@
-import DoubleArrowButton from "../../components/DoubleArrowButton";
 import NavigationLink from "../../components/NavigationLink";
 import SocialLink from "../../components/SocialLink";
 
@@ -40,8 +39,8 @@ function Community() {
           makes a form pop up with info for them to fill, again we'll provide
           what we need in the form.
         </p>
-        <NavigationLink linkType="external" link="https://www.google.com">
-          <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+        <NavigationLink double linkType="external" link="/">
+          JOIN THE COMMUNITY
         </NavigationLink>
       </section>
     </main>
