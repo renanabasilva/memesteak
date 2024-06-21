@@ -1,10 +1,10 @@
-// import styles from "./Steakpad.module.css";
+import styles from "./Steakpad.module.css";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
-// import TokenCard from "../../components/TokenCard";
+import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
-import Carousel from "../../components/Carousel";
+// import Carousel from "../../components/Carousel";
 
 const cards = [
   {
@@ -34,24 +34,24 @@ const cards = [
     cliff: "Cliff",
     vesting: "Vesting",
   },
-  {
-    ticker: "Ticker4",
-    chain: "Chain",
-    price: "Price",
-    ido_date: "IDO Date",
-    tge: "TGE",
-    cliff: "Cliff",
-    vesting: "Vesting",
-  },
-  {
-    ticker: "Ticker5",
-    chain: "Chain",
-    price: "Price",
-    ido_date: "IDO Date",
-    tge: "TGE",
-    cliff: "Cliff",
-    vesting: "Vesting",
-  },
+  // {
+  //   ticker: "Ticker4",
+  //   chain: "Chain",
+  //   price: "Price",
+  //   ido_date: "IDO Date",
+  //   tge: "TGE",
+  //   cliff: "Cliff",
+  //   vesting: "Vesting",
+  // },
+  // {
+  //   ticker: "Ticker5",
+  //   chain: "Chain",
+  //   price: "Price",
+  //   ido_date: "IDO Date",
+  //   tge: "TGE",
+  //   cliff: "Cliff",
+  //   vesting: "Vesting",
+  // },
 ]
 
 function Steakpad() {
@@ -69,7 +69,21 @@ function Steakpad() {
             <DoubleArrowButton>JOIN POOL</DoubleArrowButton>
           </NavigationLink>
         </div>
-        <Carousel cards={cards} />
+        {/* <Carousel cards={cards} /> */}
+        <div className={styles.tokenCardContainer}>
+          {cards.map((card, index) => (
+            <TokenCard 
+            key={index}
+            ticker= {card.ticker}
+            chain= {card.chain}
+            price= {card.price}
+            ido_date= {card.ido_date}
+            tge= {card.tge}
+            cliff= {card.cliff}
+            vesting= {card.vesting}
+          />
+          ))}
+        </div>
         <footer className="center">
           <p>
             If they have a project they'd like to launch on our platform to get
