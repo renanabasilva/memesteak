@@ -6,7 +6,7 @@ function ArrowNavigation({ children }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const focusableElements =
-        'a[href], button, [tabindex]:not([tabindex="-1"])';
+        'a[href], button, span, [tabindex]:not([tabindex="-1"])';
       const focusable = Array.from(
         document.querySelectorAll(focusableElements)
       );

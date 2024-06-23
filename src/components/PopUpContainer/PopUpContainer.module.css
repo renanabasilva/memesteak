@@ -66,4 +66,5 @@
   text-shadow: 0 0 5px var(--greenHover);
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
