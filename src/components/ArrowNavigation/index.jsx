@@ -22,16 +22,17 @@ function ArrowNavigation({ children }) {
 
       if (isInsideHorizontalContainer) {
         const containerElements = Array.from(horizontalContainer.querySelectorAll(focusableElements));
+        const containerIndex = containerElements.indexOf(document.activeElement);
         const containerFirstFocusableIndex = focusable.indexOf(containerElements[0]);
         const containerLastFocusableIndex = focusable.indexOf(containerElements[containerElements.length - 1]);
         if (event.key === 'ArrowRight') {
-          if ( index < focusable.length - 1) {
+          if ( containerIndex < containerElements.length - 1) {
             const nextIndex = index + 1;
             focusable[nextIndex].focus();
             event.preventDefault();
           }
         } else if (event.key === 'ArrowLeft') {
-          if (index > 0) {
+          if (containerIndex > 0) {
             const prevIndex = index - 1;
             focusable[prevIndex].focus();
             event.preventDefault();

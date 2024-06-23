@@ -41,8 +41,8 @@ function Vaults() {
         tabIndex="-1"
       >
         {vaults.map((vault, index) => (
-          <div key={index} onClick={() => setActiveVault(vault)}>
-            <VaultIcon name={vault.name} img={vault.img} />
+          <div key={index} onClick={() => setActiveVault(vault)} onFocus={() => setActiveVault(vault)}>
+            <VaultIcon name={vault.name} img={vault.img} firstElement={index === 0} />
           </div>
         ))}
       </div>

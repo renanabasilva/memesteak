@@ -1,5 +1,4 @@
 GERAL
-  - Criar navegação utilizando as setas do teclado
 
 ---
 
@@ -17,8 +16,6 @@ DASHBOARD
 ---
 
 VAULTS
-
-  - Deixar pré selecionado (em focus) paper hands
 
 ---
 
@@ -41,10 +38,8 @@ COMPONENTES
     - Criar função para submissão de formulário
     - Recaptcha?
 
-  PopUp
-    - Fechar popup ao apertar ESC
-
   ArrowNavigation
     - Iniciar navegação no primeiro elemento da página
     - Manter sempre um item selecionado
     - Adicionar funcionalidade para o focus se manter no popup
+    - Focus voltar para o item ativo dentro do container
