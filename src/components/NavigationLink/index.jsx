@@ -1,12 +1,22 @@
 import { NavLink } from "react-router-dom";
 import styles from "./NavigationLink.module.css";
+import { useEffect, useRef } from "react";
 
 function NavigationLink({
   linkType = "internal" | "external",
   children,
   link,
   double,
+  focus,
 }) {
+  const navLinkRef = useRef(null);
+
+  useEffect(() => {
+    if (focus && navLinkRef.current) {
+      navLinkRef.current.focus();
+    }
+  }, [focus]);
+
   if (linkType === "internal")
     return (
       <NavLink
@@ -14,6 +24,8 @@ function NavigationLink({
         className={`${styles.linkStyle} ${
           double ? styles.doubleArrowLink : styles.singleArrowLink
         }`}
+        tabIndex="0"
+        ref={focus ? navLinkRef : null}
       >
         {children}
       </NavLink>
@@ -28,6 +40,8 @@ function NavigationLink({
         href={link}
         target="_blank"
         rel="noreferrer"
+        tabIndex="0"
+        ref={focus ? navLinkRef : null}
       >
         {children}
       </a>

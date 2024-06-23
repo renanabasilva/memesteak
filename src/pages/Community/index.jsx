@@ -24,7 +24,7 @@ function Community() {
     <main>
       <section className="main-container">
         <h1 className="page-title">COMMUNITY</h1>
-        <div>
+        <div className="horizontal-container" tabIndex="-1">
           {socialNetworks.map((social, index) => (
             <SocialLink
               key={index}

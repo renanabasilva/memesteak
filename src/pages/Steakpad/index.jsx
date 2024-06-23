@@ -68,7 +68,10 @@ function Steakpad() {
             JOIN POOL
           </NavigationLink>
         </div>
-        <div className={styles.tokenCardContainer}>
+        <div
+          className={`horizontal-container ${styles.tokenCardContainer}`}
+          tabIndex="-1"
+        >
           {cards.map((card, index) => (
             <TokenCard
               key={index}

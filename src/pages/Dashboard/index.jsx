@@ -36,6 +36,7 @@ function Dashboard() {
                   key={index}
                   linkType="internal"
                   link={`/${page.name.toLowerCase()}`}
+                  focus={index === 0}
                 >
                   {page.name}
                 </NavigationLink>

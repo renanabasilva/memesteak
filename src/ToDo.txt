@@ -12,6 +12,7 @@ DASHBOARD
   - useState para trocar a imagem
   - função para trocar item selecionado pelas setas e selecionar com enter
   - useEffect para animação da seleção ativa
+  - Colocar focus inicial no primeiro elemento (vaults)
 
 ---
 
@@ -42,3 +43,10 @@ COMPONENTES
     - Quais informações estarão no formulário?
     - Criar função para submissão de formulário
     - Recaptcha?
+
+  PopUp
+    - Fechar popup ao apertar ESC
+
+  ArrowNavigation
+    - Iniciar navegação no primeiro elemento da página
+    - Manter sempre um item selecionado

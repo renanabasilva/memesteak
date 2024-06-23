@@ -13,7 +13,12 @@ function Header() {
       />
       <img src="" alt="" />
       <div className={styles.backButton}>
-        <NavigationLink linkType="internal" link="/dashboard">
+        <NavigationLink
+          linkType="internal"
+          link="/dashboard"
+          tabIndex="0"
+          focus
+        >
           BACK TO MENU
         </NavigationLink>
       </div>

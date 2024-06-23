@@ -36,7 +36,10 @@ function Vaults() {
   return (
     <section className="main-container">
       <h1 className="page-title">VAULTS</h1>
-      <div className={styles.vaultsContainer}>
+      <div
+        className={`horizontal-container ${styles.vaultsContainer}`}
+        tabIndex="-1"
+      >
         {vaults.map((vault, index) => (
           <div key={index} onClick={() => setActiveVault(vault)}>
             <VaultIcon name={vault.name} img={vault.img} />
