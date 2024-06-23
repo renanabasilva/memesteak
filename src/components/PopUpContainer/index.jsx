@@ -16,15 +16,14 @@ function PopUpContainer({ children, popUpTarget }) {
 
   useEffect(() => {
     const handleEsc = (evt) => {
-      if (evt.keyCode === 27)
-        setShow(false);
+      if (evt.keyCode === 27) setShow(false);
     };
 
     document.addEventListener("keydown", handleEsc);
 
     return () => {
       document.removeEventListener("keydown", handleEsc);
-    }
+    };
   }, []);
 
   return (
@@ -33,7 +32,11 @@ function PopUpContainer({ children, popUpTarget }) {
       {show && (
         <div className={styles.popUpContainer} onClick={closeByOverlay}>
           <div className={styles.popUpContent}>
-            <span className={styles.closeButton} onClick={togglePopUp} tabIndex="0">
+            <span
+              className={styles.closeButton}
+              onClick={togglePopUp}
+              tabIndex="0"
+            >
               &times;
             </span>
             <div>{popUpTarget}</div>
