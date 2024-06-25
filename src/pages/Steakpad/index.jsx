@@ -7,50 +7,32 @@ import ContactForm from "../../components/ContactForm";
 
 const cards = [
   {
-    ticker: "Ticker1",
+    project: "MEMESTEAK",
+    ticker: "$STEAK",
     chain: "Chain",
-    price: "Price",
-    ido_date: "IDO Date",
-    tge: "TGE",
-    cliff: "Cliff",
-    vesting: "Vesting",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
   },
   {
-    ticker: "Ticker2",
-    chain: "Chain",
-    price: "Price",
-    ido_date: "IDO Date",
-    tge: "TGE",
-    cliff: "Cliff",
-    vesting: "Vesting",
+    project: "TBA",
+    ticker: "TBA",
+    chain: "TBA",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
   },
   {
-    ticker: "Ticker3",
-    chain: "Chain",
-    price: "Price",
-    ido_date: "IDO Date",
-    tge: "TGE",
-    cliff: "Cliff",
-    vesting: "Vesting",
+    project: "TBA",
+    ticker: "TBA",
+    chain: "TBA",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
   },
-  // {
-  //   ticker: "Ticker4",
-  //   chain: "Chain",
-  //   price: "Price",
-  //   ido_date: "IDO Date",
-  //   tge: "TGE",
-  //   cliff: "Cliff",
-  //   vesting: "Vesting",
-  // },
-  // {
-  //   ticker: "Ticker5",
-  //   chain: "Chain",
-  //   price: "Price",
-  //   ido_date: "IDO Date",
-  //   tge: "TGE",
-  //   cliff: "Cliff",
-  //   vesting: "Vesting",
-  // },
 ];
 
 function Steakpad() {
@@ -60,9 +42,9 @@ function Steakpad() {
         <div className="center">
           <h1 className="page-title">STEAKPAD</h1>
           <p>
-            Memesteak description and info. Memesteak description and info.
-            Memesteak description and info. Memesteak description and info.
-            Memesteak description.
+            Unleash the power of staking with our SteakPad: Stake to Win.
+            Questions? Connect with our community on Telegram or check the
+            CookBook for a full breakdown.
           </p>
           <NavigationLink double linkType="external" link="/steakpad">
             JOIN POOL
@@ -75,20 +57,20 @@ function Steakpad() {
           {cards.map((card, index) => (
             <TokenCard
               key={index}
+              project={card.project}
               ticker={card.ticker}
               chain={card.chain}
               price={card.price}
               ido_date={card.ido_date}
               tge={card.tge}
-              cliff={card.cliff}
               vesting={card.vesting}
             />
           ))}
         </div>
         <footer className="center">
           <p>
-            If they have a project they'd like to launch on our platform to get
-            in touch with a button they can press to fill a basic form out.
+            Ready to launch your project? Reach out to our team, share your
+            vision, and step onto the SteakPad.
           </p>
           <PopUpContainer popUpTarget={<ContactForm />}>
             <DoubleArrowButton>CONTACT US</DoubleArrowButton>

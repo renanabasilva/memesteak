@@ -7,10 +7,10 @@
 
 .vaultsDescriptionContainer {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   padding: 1rem;
   min-height: 230px;
   width: 90vw;
@@ -28,10 +28,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.2rem;
   align-items: flex-start;
 }
+.vaultsDescriptionSideContainer h5 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-family: var(--titleFont);
+  color: var(--green);
+  margin: 0.2rem;
+}
 
+.vaultsDescriptionSideContainer p{
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
 .vaultButton {
   margin-left: 1.5rem;
 }

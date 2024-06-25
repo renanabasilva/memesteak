@@ -24,6 +24,12 @@ function Community() {
     <main>
       <section className="main-container">
         <h1 className="page-title">COMMUNITY</h1>
+        <p>
+          Connect with like-minded crypto enthusiasts and explore our project
+          deeper. Here, you’ll find links to our social media and contact
+          information. Join our discussions on Telegram, follow us on Twitter,
+          or reach out directly to the team.
+        </p>
         <div className="horizontal-container" tabIndex="-1">
           {socialNetworks.map((social, index) => (
             <SocialLink
@@ -35,9 +41,9 @@ function Community() {
           ))}
         </div>
         <p>
-          Also a icon for influencers, we want it so when they click it, it
-          makes a form pop up with info for them to fill, again we'll provide
-          what we need in the form.
+          If you're an ambassador or marketer looking to partner with us,
+          contact us below to start the conversation. Explore strategic
+          opportunities with us!
         </p>
         <NavigationLink double linkType="external" link="/">
           JOIN THE COMMUNITY

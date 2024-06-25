@@ -1,7 +1,8 @@
 .tokenCardContainer {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  text-align: justify;
   background-color: transparent;
   border: 2px solid white;
   cursor: pointer;
@@ -9,4 +10,3 @@
   padding: 0 0.5rem;
   font-size: 0.9rem;
 }
-

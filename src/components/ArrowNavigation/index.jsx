@@ -14,11 +14,11 @@ function ArrowNavigation({ children }) {
       const horizontalContainer = document.querySelector('.horizontal-container');
       const isInsideHorizontalContainer = horizontalContainer && horizontalContainer.contains(document.activeElement);
 
-      if (event.key === 'Backspace') {
-        navigate('/dashboard');
-        event.preventDefault();
-        return;
-      }
+      // if (event.key === 'Backspace') {
+      //   navigate('/dashboard');
+      //   event.preventDefault();
+      //   return;
+      // }
 
       if (isInsideHorizontalContainer) {
         const containerElements = Array.from(horizontalContainer.querySelectorAll(focusableElements));

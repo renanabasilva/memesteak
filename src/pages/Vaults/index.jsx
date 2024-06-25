@@ -5,29 +5,34 @@ import SingleArrowButton from "../../components/SingleArrowButton";
 
 const vaults = [
   {
-    name: "PAPER HANDS",
+    name: "The PaperHands",
     img: "paper",
-    description: "PAPER HANDS TEXT DESCRIPTION",
+    period: "7 Days",
+    description: "Only got a week's worth of courage? Join the PaperHands club. A mere seven days of commitment because we know that’s about as long as you can pretend to be brave before folding. If your crypto strategy involves panic selling at bedtime stories, here's your dream plan. Fold easily and early with The PaperHands!",
   },
   {
-    name: "IRON HANDS",
+    name: "The IronHands",
     img: "iron",
-    description: "IRON HANDS TEXT DESCRIPTION",
+    period: "14 Days",
+    description: "Ah, the IronHands challenge: A two-week fantasy camp where you can play make-believe investor. Two weeks might not seem like much, but for you, it's probably an eternity. Let's roll out the red carpet for the bravery that barely spans a Netflix free trial. Pretend to be a trader today with The Ironhands!",
   },
   {
-    name: "GOLDEN HANDS",
+    name: "The GoldHands",
     img: "gold",
-    description: "GOLDEN HANDS TEXT DESCRIPTION",
+    period: "28 Days",
+    description: "Welcome to The GoldHands, the perfect plan for those who aspire to greatness but settle for just fine. Built for those who want to feel like a long-term investor without being long-term investor. Not quite a saga, but more than a brief encounter. Feel like a champ for almost a month with The GoldHands!",
   },
   {
-    name: "DIAMOND HANDS",
+    name: "The DiamondHands",
     img: "diamond",
-    description: "DIAMOND HANDS TEXT DESCRIPTION",
+    period: "3 Months",
+    description: "Enter a time trial with The DiamondHands, where you will spend a quarter of a year discovering new levels of market anxiety. Over these few months, you’ll have the chance to see beyond immediate fluctuations and understand trends that only the patient can spot. Prepare to see your patience pay off with The DiamondHands!",
   },
   {
-    name: "INFINITY GAUNTLETS",
+    name: "The Infinity-Gauntlets",
     img: "infinity",
-    description: "INFINITY GAUNTLETS TEXT DESCRIPTION",
+    period: "6 Months",
+    description: "Engage in the supreme challenge with the Infinity Gauntlets, crafted for those who pick winners but exit too soon. Venture into the echelons of crypto titans, where six months of resilience could pivot your financial future. Full conviction required. Forge your destiny with The Infinity-Gauntlets.",
   },
 ];
 
@@ -79,12 +84,14 @@ function Vaults() {
           alt={activeVault.name}
         />
         <div className={styles.vaultsDescriptionSideContainer}>
+          <h5>
+            {activeVault.name}
+          </h5>
           <p>
-            {" "}
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            dolores molestias inventore praesentium, ex quod, magni placeat iste
-            veritatis nisi consequuntur non expedita eum, fuga beatae unde
-            facilis iusto nobis! {activeVault.description}
+            Steak Period: {activeVault.period}
+          </p>
+          <p>
+            {activeVault.description}
           </p>
           <div className={styles.vaultButton}>
             <SingleArrowButton>SELECT THIS VAULT</SingleArrowButton>

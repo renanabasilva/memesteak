@@ -22,7 +22,8 @@
   text-align: justify;
 }
 
-.inputContainer > input {
+.inputContainer > input, 
+.inputContainer > textarea {
   flex: 1;
   border: 2px solid var(--green);
   background-color: #000;
