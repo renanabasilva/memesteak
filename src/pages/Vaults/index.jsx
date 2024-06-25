@@ -33,6 +33,22 @@ const vaults = [
 
 function Vaults() {
   const [activeVault, setActiveVault] = useState(vaults[0]);
+
+  const handleMouseLeave = () => {
+    const imgElement = document.activeElement.querySelector("img");
+    if (imgElement) {
+      const activeElementReference = imgElement.getAttribute("alt");
+
+      const activeOption = vaults.find((obj) =>
+        Object.values(obj).includes(activeElementReference)
+      );
+
+      if (activeOption) {
+        setActiveVault(activeOption);
+      }
+    }
+  };
+
   return (
     <section className="main-container">
       <h1 className="page-title">VAULTS</h1>
@@ -41,8 +57,18 @@ function Vaults() {
         tabIndex="-1"
       >
         {vaults.map((vault, index) => (
-          <div key={index} onClick={() => setActiveVault(vault)} onFocus={() => setActiveVault(vault)}>
-            <VaultIcon name={vault.name} img={vault.img} firstElement={index === 0} />
+          <div
+            key={index}
+            onClick={() => setActiveVault(vault)}
+            onFocus={() => setActiveVault(vault)}
+            onMouseEnter={() => setActiveVault(vault)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <VaultIcon
+              name={vault.name}
+              img={vault.img}
+              firstElement={index === 0}
+            />
           </div>
         ))}
       </div>
