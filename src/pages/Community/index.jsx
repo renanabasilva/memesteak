@@ -1,21 +1,24 @@
 import NavigationLink from "../../components/NavigationLink";
 import SocialLink from "../../components/SocialLink";
+import telegramIcon from "../../assets/images/socials_telegram_300.png";
+import xIcon from "../../assets/images/socials_x_300.png";
+import mailIcon from "../../assets/images/socials_mail_300.png";
 
 const socialNetworks = [
   {
     name: "Telegram",
     link: "#",
-    iconPath: "#",
+    icon: telegramIcon,
   },
   {
     name: "Twitter",
     link: "#",
-    iconPath: "#",
+    icon: xIcon,
   },
   {
     name: "Email",
     link: "#",
-    iconPath: "#",
+    icon: mailIcon,
   },
 ];
 
@@ -36,7 +39,7 @@ function Community() {
               key={index}
               name={social.name}
               link={social.link}
-              iconPath={social.iconPath}
+              icon={social.icon}
             />
           ))}
         </div>
