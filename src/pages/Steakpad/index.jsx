@@ -1,7 +1,6 @@
 import styles from "./Steakpad.module.css";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import TokenCard from "../../components/TokenCard";
-import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
 import memesteakJump from "../../assets/gifs/memesteak_logo_jump.gif";
@@ -50,9 +49,6 @@ function Steakpad() {
             Questions? Connect with our community on Telegram or check the
             CookBook for a full breakdown.
           </p>
-          <NavigationLink double linkType="external" link="/steakpad">
-            JOIN POOL
-          </NavigationLink>
         </div>
         <div
           className={`horizontal-container ${styles.tokenCardContainer}`}

@@ -29,13 +29,10 @@ COOKBOOK
 COMPONENTES
 
   formulário
-    - Quais informações estarão no formulário?
     - Criar função para submissão de formulário
     - Recaptcha?
 
   ArrowNavigation
-    - Iniciar navegação no primeiro elemento da página
-    - Manter sempre um item selecionado
     - Adicionar funcionalidade para o focus se manter no popup
     - Focus voltar para o item ativo dentro do container
 

@@ -4,9 +4,52 @@
   align-items: center;
   text-align: justify;
   background-color: transparent;
-  border: 2px solid white;
+  border: none;
   cursor: pointer;
   margin: 1rem;
   padding: 0 0.5rem;
   font-size: 0.9rem;
+
+  .tokenCardImg {
+    margin: 0.2rem;
+    border: 7px double #8b8fae;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: transparent;
+  }
+
+  .joinButton {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #1f8029;
+    font-family: var(--titleFont);
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    transform: scale(1.05);
+
+    .tokenCardImg {
+      border-color: var(--greenHover);
+      box-shadow: 0 0 10px var(--greenHover);
+    }
+
+    .joinButton {
+      color: var(--greenHover);
+      text-shadow: 0 0 3px #84f88f;
+      outline: none;
+
+      &::before {
+        position: absolute;
+        content: "►";
+        left: -30px;
+      }
+    }
+  }
 }

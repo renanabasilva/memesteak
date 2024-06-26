@@ -14,7 +14,7 @@ function TokenCard({
   return (
     <PopUpContainer popUpTarget={<p className="page-title">COMMING SOON...</p>}>
       <button className={styles.tokenCardContainer} tabIndex="0">
-        <img src={img} alt="" />
+        <img className={styles.tokenCardImg} src={img} alt="" />
         <ul>
           <li>Project: {project}</li>
           <li>Ticker: {ticker}</li>
@@ -23,6 +23,7 @@ function TokenCard({
           <li>IDO Date: {ido_date}</li>
           <li>TGE: {tge}</li>
           <li>Vesting: {vesting}</li>
+          <div className={styles.joinButton}>JOIN POOL</div>
         </ul>
       </button>
     </PopUpContainer>
