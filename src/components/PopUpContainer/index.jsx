@@ -9,9 +9,12 @@ function PopUpContainer({ children, popUpTarget }) {
   };
 
   const closeByOverlay = (evt) => {
-    if (evt.target === evt.currentTarget) {
+    if (evt.target === evt.currentTarget) setShow(false);
+  };
+
+  const closeOnEnter = (evt) => {
+    if (evt.key === "Enter" && evt.target === document.activeElement)
       setShow(false);
-    }
   };
 
   useEffect(() => {
@@ -35,6 +38,7 @@ function PopUpContainer({ children, popUpTarget }) {
             <span
               className={styles.closeButton}
               onClick={togglePopUp}
+              onKeyDown={closeOnEnter}
               tabIndex="0"
             >
               &times;

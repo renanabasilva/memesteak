@@ -41,7 +41,7 @@
 }
 
 .vaultsDescriptionSideContainer p,
-.vaultsDescriptionSideContainer h6{
+.vaultsDescriptionSideContainer h6 {
   font-size: 0.9rem;
   margin: 0.2rem;
 }
@@ -59,11 +59,11 @@
     flex-wrap: wrap;
   }
 
-  .vaultsDescriptionContainer{
+  .vaultsDescriptionContainer {
     flex-direction: column;
   }
 
-  .vaultsDescriptionSideContainer{
+  .vaultsDescriptionSideContainer {
     align-items: center;
   }
 }

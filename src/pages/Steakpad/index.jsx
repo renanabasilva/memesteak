@@ -4,6 +4,7 @@ import TokenCard from "../../components/TokenCard";
 import NavigationLink from "../../components/NavigationLink";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
+import memesteakJump from "../../assets/gifs/memesteak_logo_jump.gif";
 
 const cards = [
   {
@@ -14,6 +15,7 @@ const cards = [
     ido_date: "TBA",
     tge: "TBA",
     vesting: "TBA",
+    img: memesteakJump,
   },
   {
     project: "TBA",
@@ -23,6 +25,7 @@ const cards = [
     ido_date: "TBA",
     tge: "TBA",
     vesting: "TBA",
+    img: memesteakJump,
   },
   {
     project: "TBA",
@@ -32,6 +35,7 @@ const cards = [
     ido_date: "TBA",
     tge: "TBA",
     vesting: "TBA",
+    img: memesteakJump,
   },
 ];
 
@@ -64,6 +68,7 @@ function Steakpad() {
               ido_date={card.ido_date}
               tge={card.tge}
               vesting={card.vesting}
+              img={card.img}
             />
           ))}
         </div>

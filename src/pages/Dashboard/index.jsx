@@ -21,15 +21,28 @@ const pages = [
 function Dashboard() {
   const [activeOption, setActiveOption] = useState(pages[0]);
 
-  const handleMouseLeave = () => {
+  const handleMouseEnter = (evt) => {
+    const activeElement = evt.currentTarget.querySelector("a");
+    if (activeElement) {
+      activeElement.focus();
+      const activateOption = pages.find((obj) =>
+        Object.values(obj).includes(activeElement.innerHTML)
+      );
+      setActiveOption(activateOption);
+    }
+  };
+
+  const handleMouseLeave = (evt) => {
     const activeElementContent = document.activeElement.innerHTML;
     const activeOption = pages.find((obj) =>
       Object.values(obj).includes(activeElementContent)
     );
-
     if (activeOption) {
       setActiveOption(activeOption);
+      evt.currentTarget.querySelector("a").focus();
     }
+    if (document.activeElement.tagName.toLowerCase() !== "a")
+      evt.currentTarget.querySelector("a").focus();
   };
 
   return (
@@ -49,7 +62,7 @@ function Dashboard() {
                 <div
                   key={index}
                   onFocus={() => setActiveOption(page)}
-                  onMouseEnter={() => setActiveOption(page)}
+                  onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
                   <NavigationLink

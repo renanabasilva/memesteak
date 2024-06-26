@@ -1,5 +1,3 @@
-import placeholder from "../../assets/images/hand_diamond_200.png";
-
 function SocialLink({ name, link, icon }) {
   return (
     <>
