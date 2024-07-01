@@ -16,7 +16,6 @@ VAULTS
 
 STEAKPAD
 
-  - Links Join Pool?
   - Carrosel TokenCard?
 
 ---
@@ -36,34 +35,12 @@ COMPONENTES
     - Adicionar funcionalidade para o focus se manter no popup
     - Focus voltar para o item ativo dentro do container
 
-SteakVault:
-
-Under each description we button underneath will say 'ENTER STEAK' - when pressed maybe a small pop saying 'coming soon' or 'under construction'
-
 
 SteakPad:
 
 The other 2 sections will have the same list but 'TBA' on all of them, for their logo just a pixalated blur maybe?
 
-Inside each section we need a 'JOIN POOL' button and same as the 'ENTER STEAK' some sort of pop up saying 'coming soon' or something along these lines.
-
 
 Contact Us:
 
 With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io
-
-
-Community:
-
-we will also have a small part for ambassadors/marketers:
-
-If you're an ambassador or marketer looking to partner with us, contact us below to start the conversation. Explore strategic opportunities with us!
-
-Below this maybe a form of a contact button which pops a form out?
-
-The form will need this information:
-
-Name:
-Agency:
-Social Handle:
-Proposal:

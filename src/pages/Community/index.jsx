@@ -1,8 +1,10 @@
-import NavigationLink from "../../components/NavigationLink";
 import SocialLink from "../../components/SocialLink";
 import telegramIcon from "../../assets/images/socials_telegram_300.png";
 import xIcon from "../../assets/images/socials_x_300.png";
 import mailIcon from "../../assets/images/socials_mail_300.png";
+import PopUpContainer from "../../components/PopUpContainer";
+import DoubleArrowButton from "../../components/DoubleArrowButton";
+import AmbassadorContactForm from "../../components/AmbassadorContactForm";
 
 const socialNetworks = [
   {
@@ -48,9 +50,9 @@ function Community() {
           contact us below to start the conversation. Explore strategic
           opportunities with us!
         </p>
-        <NavigationLink double linkType="external" link="/">
-          JOIN THE COMMUNITY
-        </NavigationLink>
+        <PopUpContainer popUpTarget={<AmbassadorContactForm />}>
+            <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+          </PopUpContainer>
       </section>
     </main>
   );
