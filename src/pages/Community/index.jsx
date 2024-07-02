@@ -1,7 +1,8 @@
+import styles from "./Community.module.css";
 import SocialLink from "../../components/SocialLink";
-import telegramIcon from "../../assets/images/socials_telegram_300.png";
-import xIcon from "../../assets/images/socials_x_300.png";
-import mailIcon from "../../assets/images/socials_mail_300.png";
+import telegramIcon from "../../assets/images/socials_telegram_200.png";
+import xIcon from "../../assets/images/socials_x_200.png";
+import mailIcon from "../../assets/images/socials_mail_200.png";
 import PopUpContainer from "../../components/PopUpContainer";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import AmbassadorContactForm from "../../components/AmbassadorContactForm";
@@ -27,14 +28,17 @@ const socialNetworks = [
 function Community() {
   return (
     <main className="main-container">
-      <section className="content-section">
+      <section className={`content-section ${styles.communityContainer}`}>
         <p>
           Connect with like-minded crypto enthusiasts and explore our project
           deeper. Here, you’ll find links to our social media and contact
           information. Join our discussions on Telegram, follow us on Twitter,
           or reach out directly to the team.
         </p>
-        <div className="horizontal-container" tabIndex="-1">
+        <div
+          className={`horizontal-container ${styles.socialIconsContainer}`}
+          tabIndex="-1"
+        >
           {socialNetworks.map((social, index) => (
             <SocialLink
               key={index}
@@ -44,14 +48,16 @@ function Community() {
             />
           ))}
         </div>
-        <p>
-          If you're an ambassador or marketer looking to partner with us,
-          contact us below to start the conversation. Explore strategic
-          opportunities with us!
-        </p>
-        <PopUpContainer popUpTarget={<AmbassadorContactForm />}>
-          <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
-        </PopUpContainer>
+        <div className={styles.ambassadorContainer}>
+          <p>
+            If you're an ambassador or marketer looking to partner with us,
+            contact us below to start the conversation. Explore strategic
+            opportunities with us!
+          </p>
+          <PopUpContainer popUpTarget={<AmbassadorContactForm />}>
+            <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+          </PopUpContainer>
+        </div>
       </section>
     </main>
   );

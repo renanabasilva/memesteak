@@ -1,7 +1,7 @@
 function SocialLink({ name, link, icon }) {
   return (
     <>
-      <a href={link} tabIndex="0">
+      <a href={link} rel="noreferrer" target="_blank" tabIndex="0">
         <img src={icon} alt={name} />
       </a>
     </>
