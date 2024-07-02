@@ -1,27 +1,27 @@
+import { useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
-import PlainLogo from "../../assets/memesteak_logo.gif";
-import NavigationLink from "../NavigationLink";
+import PagesHeader from "./PagesHeader";
+// import PlainLogo from "../../assets/memesteak_logo.gif";
+// import NavigationLink from "../NavigationLink";
 
 function Header() {
+  const location = useLocation();
+
+  const renderHeaderContent = () => {
+    // if (location.pathname === '/'){
+
+    // }
+
+    // if (location.pathname === '/dashboard'){
+    //   return <DashboardHeader />
+    // }
+
+    return <PagesHeader pageName={location.pathname} />;
+  };
+
   return (
     <header className={styles.mainContainer}>
-      {/* <h1>MEMESTEAK</h1> */}
-      <img
-        className={styles.plainLogo}
-        src={PlainLogo}
-        alt="Memesteak skewed logo"
-      />
-      <img src="" alt="" />
-      <div className={styles.backButton}>
-        <NavigationLink
-          linkType="internal"
-          link="/dashboard"
-          tabIndex="0"
-          focus
-        >
-          BACK TO MENU
-        </NavigationLink>
-      </div>
+      {renderHeaderContent()}
     </header>
   );
 }

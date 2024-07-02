@@ -26,9 +26,8 @@ const socialNetworks = [
 
 function Community() {
   return (
-    <main>
-      <section className="main-container">
-        <h1 className="page-title">COMMUNITY</h1>
+    <main className="main-container">
+      <section className="content-section">
         <p>
           Connect with like-minded crypto enthusiasts and explore our project
           deeper. Here, you’ll find links to our social media and contact
@@ -51,8 +50,8 @@ function Community() {
           opportunities with us!
         </p>
         <PopUpContainer popUpTarget={<AmbassadorContactForm />}>
-            <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
-          </PopUpContainer>
+          <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+        </PopUpContainer>
       </section>
     </main>
   );

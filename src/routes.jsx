@@ -1,3 +1,6 @@
+import ArrowNavigation from "./components/ArrowNavigation";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import PageLayout from "./components/PageLayout";
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
@@ -5,13 +8,13 @@ import Vaults from "./pages/Vaults";
 import Steakpad from "./pages/Steakpad";
 import Cookbook from "./pages/Cookbook";
 import Community from "./pages/Community";
-import ArrowNavigation from "./components/ArrowNavigation";
 
 const { BrowserRouter, Routes, Route } = require("react-router-dom");
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route index path="/" element={<LandingPage />} />
         <Route path="/" element={<ArrowNavigation />}>
@@ -25,6 +28,7 @@ function AppRoutes() {
         </Route>
         <Route path="*" element={404} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

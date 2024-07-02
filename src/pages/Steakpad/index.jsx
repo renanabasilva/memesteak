@@ -40,16 +40,13 @@ const cards = [
 
 function Steakpad() {
   return (
-    <main>
-      <section className="main-container">
-        <div className="center">
-          <h1 className="page-title">STEAKPAD</h1>
-          <p>
-            Unleash the power of staking with our SteakPad: Stake to Win.
-            Questions? Connect with our community on Telegram or check the
-            CookBook for a full breakdown.
-          </p>
-        </div>
+    <main className="main-container">
+      <section className="content-section">
+        <p>
+          Unleash the power of staking with our SteakPad: Stake to Win.
+          Questions? Connect with our community on Telegram or check the
+          CookBook for a full breakdown.
+        </p>
         <div
           className={`horizontal-container ${styles.tokenCardContainer}`}
           tabIndex="-1"

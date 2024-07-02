@@ -1,8 +1,7 @@
 function Cookbook() {
   return (
-    <main>
-      <section className="main-container">
-        <h1 className="page-title">COOKBOOK</h1>
+    <main className="main-container">
+      <section className="content-section">
         <div className="center">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur

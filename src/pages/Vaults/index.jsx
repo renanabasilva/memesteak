@@ -60,46 +60,47 @@ function Vaults() {
   };
 
   return (
-    <section className="main-container">
-      <h1 className="page-title">VAULTS</h1>
-      <div
-        className={`horizontal-container ${styles.vaultsContainer}`}
-        tabIndex="-1"
-      >
-        {vaults.map((vault, index) => (
-          <div
-            key={index}
-            onClick={() => setActiveVault(vault)}
-            onFocus={() => setActiveVault(vault)}
-            onMouseEnter={() => setActiveVault(vault)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <VaultIcon
-              name={vault.name}
-              img={vault.img}
-              firstElement={index === 0}
+    <main className="main-container">
+      <section className="content-section">
+        <div
+          className={`horizontal-container ${styles.vaultsContainer}`}
+          tabIndex="-1"
+        >
+          {vaults.map((vault, index) => (
+            <div
+              key={index}
+              onClick={() => setActiveVault(vault)}
+              onFocus={() => setActiveVault(vault)}
+              onMouseEnter={() => setActiveVault(vault)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <VaultIcon
+                name={vault.name}
+                img={vault.img}
+                firstElement={index === 0}
+              />
+            </div>
+          ))}
+        </div>
+        <div>
+          <div className={styles.vaultsDescriptionContainer}>
+            <img
+              className={styles.border}
+              src={require(`../../assets/gifs/hand_${activeVault.img}_transform.gif`)}
+              alt={activeVault.name}
             />
+            <div className={styles.vaultsDescriptionSideContainer}>
+              <h5>{activeVault.name}</h5>
+              <h6>Steak Period: {activeVault.period}</h6>
+              <p>{activeVault.description}</p>
+            </div>
           </div>
-        ))}
-      </div>
-      <div>
-        <div className={styles.vaultsDescriptionContainer}>
-          <img
-            className={styles.border}
-            src={require(`../../assets/gifs/hand_${activeVault.img}_transform.gif`)}
-            alt={activeVault.name}
-          />
-          <div className={styles.vaultsDescriptionSideContainer}>
-            <h5>{activeVault.name}</h5>
-            <h6>Steak Period: {activeVault.period}</h6>
-            <p>{activeVault.description}</p>
+          <div className={styles.vaultButton}>
+            <SingleArrowButton>ENTER STEAK</SingleArrowButton>
           </div>
         </div>
-        <div className={styles.vaultButton}>
-          <SingleArrowButton>ENTER STEAK</SingleArrowButton>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
 
