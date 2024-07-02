@@ -5,6 +5,7 @@
   height: 100%;
   padding: 0 3vw;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .pageTitle {
@@ -16,7 +17,7 @@
   margin: 0;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -35%);
   padding: 1.1rem;
   width: 20rem;
   text-align: center;

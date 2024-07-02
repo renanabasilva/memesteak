@@ -1,0 +1,22 @@
+.mainContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -35%);
+    width: 20rem;
+    height: 100%;
+    background-image: url("../../../assets/bg_status_bar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+  }
+}
