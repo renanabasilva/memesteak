@@ -4,8 +4,19 @@ import TokenCard from "../../components/TokenCard";
 import PopUpContainer from "../../components/PopUpContainer";
 import ContactForm from "../../components/ContactForm";
 import memesteakJump from "../../assets/gifs/memesteak_logo_jump.gif";
+import memesteakPlaceholder from "../../assets/images/memesteak_placeholder.png";
 
 const cards = [
+  {
+    project: "TBA",
+    ticker: "TBA",
+    chain: "TBA",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
+    img: memesteakPlaceholder,
+  },
   {
     project: "MEMESTEAK",
     ticker: "$STEAK",
@@ -24,24 +35,14 @@ const cards = [
     ido_date: "TBA",
     tge: "TBA",
     vesting: "TBA",
-    img: memesteakJump,
-  },
-  {
-    project: "TBA",
-    ticker: "TBA",
-    chain: "TBA",
-    price: "TBA",
-    ido_date: "TBA",
-    tge: "TBA",
-    vesting: "TBA",
-    img: memesteakJump,
+    img: memesteakPlaceholder,
   },
 ];
 
 function Steakpad() {
   return (
     <main className="main-container">
-      <section className="content-section">
+      <section className={`content-section ${styles.steakpadContainer}`}>
         <p>
           Unleash the power of staking with our SteakPad: Stake to Win.
           Questions? Connect with our community on Telegram or check the
@@ -65,7 +66,7 @@ function Steakpad() {
             />
           ))}
         </div>
-        <footer className="center">
+        <div className={styles.contactContainer}>
           <p>
             Ready to launch your project? Reach out to our team, share your
             vision, and step onto the SteakPad.
@@ -73,7 +74,7 @@ function Steakpad() {
           <PopUpContainer popUpTarget={<ContactForm />}>
             <DoubleArrowButton>CONTACT US</DoubleArrowButton>
           </PopUpContainer>
-        </footer>
+        </div>
       </section>
     </main>
   );

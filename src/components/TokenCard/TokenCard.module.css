@@ -1,12 +1,12 @@
 .tokenCardContainer {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   text-align: justify;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
   font-size: 0.9rem;
 
   .joinButton {
@@ -36,6 +36,7 @@
   }
 
   ul {
-    padding-inline-start: 0;
+    padding-inline-start: 1rem;
+    margin: 0;
   }
 }

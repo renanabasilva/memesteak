@@ -1,5 +1,20 @@
+.steakpadContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .tokenCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.contactContainer {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
 }
