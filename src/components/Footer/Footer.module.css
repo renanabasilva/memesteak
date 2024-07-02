@@ -12,3 +12,7 @@
   transform: scale(-1);
   z-index: 1;
 }
+
+.homeFooter {
+  height: 10rem;
+}

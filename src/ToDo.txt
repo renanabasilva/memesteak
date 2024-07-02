@@ -36,11 +36,6 @@ COMPONENTES
     - Focus voltar para o item ativo dentro do container
 
 
-SteakPad:
-
-The other 2 sections will have the same list but 'TBA' on all of them, for their logo just a pixalated blur maybe?
-
-
 Contact Us:
 
 With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io

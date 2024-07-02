@@ -1,7 +1,7 @@
-import styles from "./Dashboard.module.css";
-import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
-import NavigationLink from "../../components/NavigationLink";
 import { useState } from "react";
+import styles from "./Dashboard.module.css";
+import NavigationLink from "../../components/NavigationLink";
+import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
 
 const pages = [
   {
@@ -77,14 +77,11 @@ function Dashboard() {
             </ul>
           </div>
           <img src="" alt="" />
-          <div
-            style={{
-              width: "200px",
-              height: "200px",
-              border: "1px solid #0fF",
-            }}
-          >
-            {activeOption.name}
+          <div>
+            <img
+              src={require(`../../assets/gifs/icon_${activeOption.name.toLowerCase()}_300.gif`)}
+              alt={activeOption.name}
+            />
           </div>
         </div>
         <div className={styles.description}>
@@ -100,4 +97,5 @@ function Dashboard() {
   );
 }
 
+export { pages };
 export default Dashboard;

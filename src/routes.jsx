@@ -26,7 +26,7 @@ function AppRoutes() {
             <Route path="community" element={<Community />} />
           </Route>
         </Route>
-        <Route path="*" element={404} />
+        <Route path="*" element={"404 - Page not found"} />
       </Routes>
       <Footer />
     </BrowserRouter>
