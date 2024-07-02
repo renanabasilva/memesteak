@@ -6,39 +6,21 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin: 1rem;
-  padding: 0 0.5rem;
+  margin: 0 3rem;
   font-size: 0.9rem;
-
-  .tokenCardImg {
-    margin: 0.2rem;
-    border: 7px double #8b8fae;
-    border-radius: 5px;
-    padding: 0.5rem;
-    background-color: transparent;
-  }
 
   .joinButton {
     position: relative;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
     color: #1f8029;
     font-family: var(--titleFont);
     font-size: 1.3rem;
-    padding: 0;
+    top: 1rem;
+    left: -4rem;
   }
 
   &:hover,
   &:focus {
-    cursor: pointer;
     outline: none;
-    transform: scale(1.05);
-
-    .tokenCardImg {
-      border-color: var(--greenHover);
-      box-shadow: 0 0 10px var(--greenHover);
-    }
 
     .joinButton {
       color: var(--greenHover);
@@ -51,5 +33,9 @@
         left: -30px;
       }
     }
+  }
+
+  ul {
+    padding-inline-start: 0;
   }
 }
