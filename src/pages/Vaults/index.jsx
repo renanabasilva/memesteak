@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Vaults.module.css";
 import VaultIcon from "../../components/VaultIcon";
 import SingleArrowButton from "../../components/SingleArrowButton";
+import PopUpContainer from "../../components/PopUpContainer";
 
 const vaults = [
   {
@@ -96,7 +97,9 @@ function Vaults() {
             </div>
           </div>
           <div className={styles.vaultButton}>
+          <PopUpContainer popUpTarget={<p className="popup-text">COMMING SOON...</p>}>
             <SingleArrowButton>ENTER STEAK</SingleArrowButton>
+          </PopUpContainer>
           </div>
         </div>
       </section>
