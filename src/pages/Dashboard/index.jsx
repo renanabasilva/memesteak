@@ -86,10 +86,11 @@ function Dashboard() {
         </div>
         <div className={styles.description}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            soluta vitae, enim, delectus alias ducimus corporis sequi natus
-            libero numquam recusandae amet dolores modi temporibus aspernatur
-            odit praesentium distinctio est!
+            Welcome to Memesteak, the digital dojo where we turn staking into a
+            extreme sport. Here, we crank up the heat and turn up the steaks.
+            Got the nerve to lock your tokens, or are you just here to window
+            shop? Strap in and steak up - the arena is set, and the coins are
+            waiting. Are you ready to play?
           </p>
         </div>
       </section>

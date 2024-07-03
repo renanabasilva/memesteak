@@ -4,7 +4,6 @@ import SingleArrowButton from "../../components/SingleArrowButton";
 function ContactForm() {
   return (
     <div className={styles.mainContainer}>
-      <img src={require("../../assets/images/hand_diamond_300.png")} alt="" />
       <form
         className={styles.formContainer}
         action=""
