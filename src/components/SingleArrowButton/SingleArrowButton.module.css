@@ -18,6 +18,16 @@
       position: absolute;
       content: "►";
       left: -30px;
+      animation: bounceLeft 0.5s infinite alternate;
     }
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
   }
 }

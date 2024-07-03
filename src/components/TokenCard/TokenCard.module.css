@@ -31,6 +31,7 @@
         position: absolute;
         content: "►";
         left: -30px;
+        animation: bounceLeft 0.5s infinite alternate;
       }
     }
   }
@@ -38,5 +39,14 @@
   ul {
     padding-inline-start: 1rem;
     margin: 0;
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
   }
 }

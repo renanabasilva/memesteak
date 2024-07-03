@@ -21,6 +21,7 @@
       position: absolute;
       content: "►";
       left: -30px;
+      animation: bounceLeft 0.5s infinite alternate;
     }
   }
 }
@@ -36,10 +37,34 @@
   &::before {
     content: "►";
     margin-right: 10px;
+    position: absolute;
+    left: -35px;
+    animation: bounceLeft 0.5s infinite alternate;
   }
 
   &::after {
     content: "◄";
     margin-left: 10px;
+    position: absolute;
+    right: -35px;
+    animation: bounceRight 0.5s infinite alternate;
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
   }
 }
