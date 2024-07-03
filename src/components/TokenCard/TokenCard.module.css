@@ -1,0 +1,52 @@
+.tokenCardContainer {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: justify;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 3rem;
+  font-size: 0.9rem;
+
+  .joinButton {
+    position: relative;
+    color: #1f8029;
+    font-family: var(--titleFont);
+    font-size: 1.3rem;
+    top: 1rem;
+    left: -4rem;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .joinButton {
+      color: var(--greenHover);
+      text-shadow: 0 0 3px #84f88f;
+      outline: none;
+
+      &::before {
+        position: absolute;
+        content: "►";
+        left: -30px;
+        animation: bounceLeft 0.5s infinite alternate;
+      }
+    }
+  }
+
+  ul {
+    padding-inline-start: 1rem;
+    margin: 0;
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}

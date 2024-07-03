@@ -1,0 +1,31 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 75rem;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    max-width: 50rem;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.popup-text {
+  font-family: var(--titleFont);
+  font-weight: 400;
+  font-size: 4rem;
+}

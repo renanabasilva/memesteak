@@ -1,0 +1,33 @@
+.button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  font-family: var(--titleFont);
+  font-size: 1.3rem;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--greenHover);
+    text-shadow: 0 0 3px #84f88f;
+    outline: none;
+
+    &::before {
+      position: absolute;
+      content: "►";
+      left: -30px;
+      animation: bounceLeft 0.5s infinite alternate;
+    }
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}

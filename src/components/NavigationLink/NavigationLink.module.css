@@ -1,0 +1,70 @@
+.linkStyle {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  font-family: var(--titleFont);
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.singleArrowLink {
+  &:hover,
+  &:focus {
+    color: var(--greenHover);
+    text-shadow: 0 0 3px #84f88f;
+    outline: none;
+
+    &::before {
+      position: absolute;
+      content: "►";
+      left: -30px;
+      animation: bounceLeft 0.5s infinite alternate;
+    }
+  }
+}
+
+.doubleArrowLink {
+  &:hover,
+  &:focus {
+    color: var(--greenHover);
+    text-shadow: 0 0 3px #84f88f;
+    outline: none;
+  }
+
+  &::before {
+    content: "►";
+    margin-right: 10px;
+    position: absolute;
+    left: -35px;
+    animation: bounceLeft 0.5s infinite alternate;
+  }
+
+  &::after {
+    content: "◄";
+    margin-left: 10px;
+    position: absolute;
+    right: -35px;
+    animation: bounceRight 0.5s infinite alternate;
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}

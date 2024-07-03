@@ -1,0 +1,52 @@
+.button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--titleFont);
+  font-size: 1.3rem;
+  color: var(--green);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: var(--greenHover);
+    text-shadow: 0 0 3px #84f88f;
+    transition: all 0.2s;
+    outline: none;
+  }
+
+  &::before {
+    content: "►";
+    margin-right: 10px;
+    position: absolute;
+    left: -25px;
+    animation: bounceLeft 0.5s infinite alternate;
+  }
+
+  &::after {
+    content: "◄";
+    margin-left: 10px;
+    position: absolute;
+    right: -25px;
+    animation: bounceRight 0.5s infinite alternate;
+  }
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}

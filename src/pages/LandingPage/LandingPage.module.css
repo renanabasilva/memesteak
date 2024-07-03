@@ -1,0 +1,21 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.titleIllustration {
+  width: 100%;
+  max-width: 690px;
+}
+
+.spotIllustration {
+  position: absolute;
+  bottom: 7.8rem;
+  width: 90%;
+  max-width: 350px;
+}
