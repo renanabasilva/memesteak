@@ -14,7 +14,7 @@ function TokenCard({
   return (
     <PopUpContainer popUpTarget={<p className="popup-text">COMING SOON...</p>}>
       <button className={styles.tokenCardContainer} tabIndex="0">
-        <img className={styles.tokenCardImg} src={img} alt="" />
+        <img className={styles.tokenCardImg} src={img} alt={project} />
         <ul>
           <li>Project: {project}</li>
           <li>Ticker: {ticker}</li>
