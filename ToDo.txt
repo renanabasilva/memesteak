@@ -1,6 +1,5 @@
 GERAL
 
-  - Adicionar uma descrição simples para o site
   - Criar versão para mobile
 
 ---
