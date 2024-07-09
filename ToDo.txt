@@ -9,6 +9,7 @@ LANDING PAGE
   
   - Fazer com que o chef não fique tão pequeno em telas grandes
   - Função para ao clicar em qualquer lugar da página entre no website
+  - imagem do chão colocar fade para a cor preta
 
 ---
 

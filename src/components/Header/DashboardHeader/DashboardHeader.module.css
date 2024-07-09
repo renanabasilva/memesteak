@@ -10,13 +10,30 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -35%);
-    width: 20rem;
+    transform: translate(-50%, -30%);
+    width: 13rem;
     height: 100%;
     background-image: url("../../../assets/bg_status_bar.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     z-index: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1300px) {
+  .mainContainer {
+    &::before {
+      width: 20rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .mainContainer {
+    &::before {
+      width: 30vw;
+      max-width: 700px;
+    }
   }
 }
