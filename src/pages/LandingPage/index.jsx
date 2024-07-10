@@ -4,28 +4,32 @@ import styles from "./LandingPage.module.css";
 import NavigationLink from "../../components/NavigationLink";
 import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
 import ChefGif from "../../assets/chef.gif";
+import brickFloor from "../../assets/bg_home_footer_walls.png";
 
 function LandingPage() {
-  const navigate = useNavigate();
-  const functionKeyRegex = /^F(1[0-2]?|[2-9])$/;
+  // const navigate = useNavigate();
+  // const functionKeyRegex = /^F(1[0-2]?|[2-9])$/;
 
-  useEffect(() => {
-    const handleKeyPress = (event) => {
-      if (!functionKeyRegex.test(event.key)) {
-        navigate("/dashboard");
-      }
-    };
+  // useEffect(() => {
+  //   const handleKeyPress = (event) => {
+  //     if (!functionKeyRegex.test(event.key)) {
+  //       navigate("/dashboard");
+  //     }
+  //   };
 
-    window.addEventListener("keydown", handleKeyPress);
+  //   window.addEventListener("keydown", handleKeyPress);
 
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("keydown", handleKeyPress);
+  //   };
+  // });
 
   return (
     <main>
       <section className={styles.mainContainer}>
+        <div className={styles.brickCeiling}>
+          <div className={styles.statusBar}></div>
+        </div>
         <img
           className={styles.titleIllustration}
           src={SkewedLogo}
@@ -39,6 +43,7 @@ function LandingPage() {
           src={ChefGif}
           alt="Chef flipping a steak"
         />
+        <div className={styles.brickFloor}></div>
       </section>
     </main>
   );

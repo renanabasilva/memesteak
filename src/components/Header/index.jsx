@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
 
   const renderHeaderContent = () => {
-    if (location.pathname === "/dashboard" || location.pathname === "/") {
+    if (location.pathname === "/dashboard") {
       return <DashboardHeader />;
     }
     if (
@@ -18,6 +18,9 @@ function Header() {
     }
   };
 
+  if (location.pathname === "/") {
+    return;
+  }
   return (
     <header className={styles.mainContainer}>{renderHeaderContent()}</header>
   );

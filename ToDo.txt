@@ -6,7 +6,6 @@ GERAL
 
 LANDING PAGE
   
-  - Fazer com que o chef não fique tão pequeno em telas grandes
   - Função para ao clicar em qualquer lugar da página entre no website
   - imagem do chão colocar fade para a cor preta
 
@@ -47,3 +46,8 @@ COMPONENTES
 Contact Us:
 
 With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io
+
+
+HOME FOOTER 
+ - mesmo tamanho que a outra imagem
+ - fade pro preto
