@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 1rem;
   max-width: 75rem;
 }
 
@@ -15,6 +14,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 
   p {
     max-width: 50rem;
