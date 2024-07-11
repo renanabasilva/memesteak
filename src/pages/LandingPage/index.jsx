@@ -35,15 +35,9 @@ function LandingPage() {
           src={SkewedLogo}
           alt="Memesteak skewed logo"
         />
-        {isMobile ? (
-          <NavigationLink linkType="internal" link="/dashboard">
-            TAP HERE TO CONTINUE
-          </NavigationLink>
-        ) : (
-          <NavigationLink double linkType="internal" link="/dashboard">
-            PRESS ANY KEY TO CONTINUE
-          </NavigationLink>
-        )}
+        <NavigationLink double linkType="internal" link="/dashboard">
+          {isMobile ? "TAP HERE TO CONTINUE" : "PRESS ANY KEY TO CONTINUE"}
+        </NavigationLink>
         <img
           className={styles.spotIllustration}
           src={ChefGif}

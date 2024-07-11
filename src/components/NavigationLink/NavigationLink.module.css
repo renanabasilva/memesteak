@@ -33,21 +33,25 @@
     text-shadow: 0 0 3px #84f88f;
     outline: none;
   }
+}
 
-  &::before {
-    content: "►";
-    margin-right: 10px;
-    position: absolute;
-    left: -35px;
-    animation: bounceLeft 0.5s infinite alternate;
-  }
+@media screen and (min-width: 600px) {
+  .doubleArrowLink {
+    &::before {
+      content: "►";
+      margin-right: 10px;
+      position: absolute;
+      left: -35px;
+      animation: bounceLeft 0.5s infinite alternate;
+    }
 
-  &::after {
-    content: "◄";
-    margin-left: 10px;
-    position: absolute;
-    right: -35px;
-    animation: bounceRight 0.5s infinite alternate;
+    &::after {
+      content: "◄";
+      margin-left: 10px;
+      position: absolute;
+      right: -35px;
+      animation: bounceRight 0.5s infinite alternate;
+    }
   }
 }
 
@@ -56,7 +60,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
 
@@ -65,6 +69,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(15px);
+    transform: translateX(10px);
   }
 }
