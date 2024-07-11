@@ -21,19 +21,10 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1300px) {
+@media screen and (min-width: 480px) {
   .mainContainer {
     &::before {
       width: 20rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .mainContainer {
-    &::before {
-      width: 30vw;
-      max-width: 700px;
     }
   }
 }

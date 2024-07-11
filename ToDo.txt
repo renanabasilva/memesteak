@@ -22,12 +22,9 @@ VAULTS
 
 STEAKPAD
 
-  - Carrosel TokenCard?
-
 ---
 
 COOKBOOK
-  - Adicionar conteúdo (hold)
 
 ---
 
@@ -40,9 +37,6 @@ COMPONENTES
   ArrowNavigation
     - Adicionar funcionalidade para o focus se manter no popup
     - Focus voltar para o item ativo dentro do container
-
-  DoubleArrow
-    - Remover setas em dispositivos mobile ou colocar apenas de acordo com o tamanho
 
 Contact Us:
 
