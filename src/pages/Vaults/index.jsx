@@ -83,7 +83,7 @@ function Vaults() {
 
   return (
     <main className="main-container">
-      <section className="content-section">
+      <section className={`content-section ${styles.vaultsContainer}`}>
         {windowWidth < 768 ? (
           <ul className={styles.menuOptions}>
             {vaults.map((vault, index) => (
@@ -101,7 +101,7 @@ function Vaults() {
           </ul>
         ) : (
           <div
-            className={`horizontal-container ${styles.vaultsContainer}`}
+            className={`horizontal-container ${styles.handsContainer}`}
             tabIndex="-1"
           >
             {vaults.map((vault, index) => (

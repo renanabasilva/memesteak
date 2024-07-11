@@ -16,8 +16,6 @@ DASHBOARD
 
 VAULTS
 
-  - I think for the vaults page as there’s 5 different options to maybe have a scroll with the small green arrows to select through them
-
 ---
 
 STEAKPAD

@@ -16,13 +16,6 @@
     color: var(--greenHover);
     text-shadow: 0 0 3px #84f88f;
     outline: none;
-
-    &::before {
-      position: absolute;
-      content: "►";
-      left: -30px;
-      animation: bounceLeft 0.5s infinite alternate;
-    }
   }
 }
 
@@ -35,7 +28,29 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  .singleArrowLink {
+    &:hover,
+    &:focus {
+      &::before {
+        position: absolute;
+        content: "►";
+        left: -30px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 600px) {
+  .singleArrowLink {
+    &:hover,
+    &:focus {
+      &::before {
+        animation: bounceLeft 0.5s infinite alternate;
+      }
+    }
+  }
+
   .doubleArrowLink {
     &::before {
       content: "►";

@@ -48,7 +48,6 @@ function Dashboard() {
   return (
     <main className={styles.mainContainer}>
       <section className={styles.contentSection}>
-        {/* <h1>MEMESTEAK</h1> */}
         <img
           className={styles.titleIllustration}
           src={SkewedLogo}
@@ -76,7 +75,6 @@ function Dashboard() {
               ))}
             </ul>
           </div>
-          <img src="" alt="" />
           <div>
             <img
               src={require(`../../assets/gifs/icon_${activeOption.name.toLowerCase()}_300.gif`)}
