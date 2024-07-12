@@ -101,7 +101,7 @@ function Dashboard() {
               linkType="internal"
               link={`/${activeOption.name.toLowerCase()}`}
             >
-              Enter
+              START
             </NavigationLink>
           </div>
         )}
