@@ -6,8 +6,6 @@ GERAL
 
 LANDING PAGE
 
-  - imagem do chão colocar fade para a cor preta
-
 ---
 
 DASHBOARD 
