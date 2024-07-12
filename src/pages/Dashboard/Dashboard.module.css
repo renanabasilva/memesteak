@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
-  margin: 0 1rem;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 .titleIllustration {
@@ -23,8 +23,13 @@
 
 .menuContainer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.optionsContainer {
+  margin-bottom: 1rem;
 }
 
 .menuTitle {
@@ -41,14 +46,32 @@
   padding: 0;
 }
 
+.selectButton {
+  text-align: center;
+}
+
 .description {
   margin: 0 auto;
   text-align: center;
   max-width: 650px;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 500px) {
   .mainContainer {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .contentSection {
+    gap: 2rem;
+  }
+
+  .menuContainer {
+    flex-direction: row;
+  }
+
+  .optionsContainer {
+    margin-bottom: 0;
   }
 }

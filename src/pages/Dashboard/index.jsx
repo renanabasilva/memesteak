@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { isMobile, isTablet } from "react-device-detect";
 import styles from "./Dashboard.module.css";
 import NavigationLink from "../../components/NavigationLink";
 import SkewedLogo from "../../assets/memesteak_logo_skewed.gif";
+import SingleArrowButton from "../../components/SingleArrowButton";
 
 const pages = [
   {
@@ -20,6 +22,8 @@ const pages = [
 
 function Dashboard() {
   const [activeOption, setActiveOption] = useState(pages[0]);
+
+  const isTouchDevice = isMobile || isTablet;
 
   const handleMouseEnter = (evt) => {
     const activeElement = evt.currentTarget.querySelector("a");
@@ -54,25 +58,33 @@ function Dashboard() {
           alt="Memesteak skewed logo"
         />
         <div className={styles.menuContainer}>
-          <div>
+          <div className={styles.optionsContainer}>
             <h3 className={styles.menuTitle}>SELECT GAME</h3>
             <ul className={styles.menuOptions}>
-              {pages.map((page, index) => (
-                <div
-                  key={index}
-                  onFocus={() => setActiveOption(page)}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <NavigationLink
-                    linkType="internal"
-                    link={`/${page.name.toLowerCase()}`}
-                    focus={index === 0}
+              {pages.map((page, index) =>
+                isTouchDevice ? (
+                  <div key={index} onFocus={() => setActiveOption(page)}>
+                    <SingleArrowButton focus={index === 0}>
+                      {page.name}
+                    </SingleArrowButton>
+                  </div>
+                ) : (
+                  <div
+                    key={index}
+                    onFocus={() => setActiveOption(page)}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                   >
-                    {page.name}
-                  </NavigationLink>
-                </div>
-              ))}
+                    <NavigationLink
+                      linkType="internal"
+                      link={`/${page.name.toLowerCase()}`}
+                      focus={index === 0}
+                    >
+                      {page.name}
+                    </NavigationLink>
+                  </div>
+                )
+              )}
             </ul>
           </div>
           <div>
@@ -82,6 +94,17 @@ function Dashboard() {
             />
           </div>
         </div>
+        {isTouchDevice && (
+          <div className={styles.selectButton}>
+            <NavigationLink
+              double
+              linkType="internal"
+              link={`/${activeOption.name.toLowerCase()}`}
+            >
+              Enter
+            </NavigationLink>
+          </div>
+        )}
         <div className={styles.description}>
           <p>
             Welcome to Memesteak, the digital dojo where we turn staking into a
