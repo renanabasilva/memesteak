@@ -5,7 +5,7 @@ import xIcon from "../../assets/images/socials_x_200.png";
 import mailIcon from "../../assets/images/socials_mail_200.png";
 import PopUpContainer from "../../components/PopUpContainer";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
-import AmbassadorContactForm from "../../components/AmbassadorContactForm";
+import AmbassadorContactForm from "../../components/Forms/AmbassadorContactForm";
 
 const socialNetworks = [
   {

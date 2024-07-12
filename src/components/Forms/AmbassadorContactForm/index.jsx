@@ -1,5 +1,5 @@
-import styles from "./AmbassadorContactForm.module.css";
-import SingleArrowButton from "../../components/SingleArrowButton";
+import styles from "../ContactForm.module.css";
+import SingleArrowButton from "../../SingleArrowButton";
 
 function AmbassadorContactForm() {
   return (
@@ -18,7 +18,6 @@ function AmbassadorContactForm() {
             required
             minLength={3}
             maxLength={50}
-            size={10}
             pattern="([a-zA-Z]+( [a-zA-Z]+)*)"
             placeholder="Name"
           />
@@ -31,7 +30,6 @@ function AmbassadorContactForm() {
             required
             minLength={3}
             maxLength={50}
-            size={10}
             placeholder="Agency"
           />
         </div>
@@ -43,7 +41,6 @@ function AmbassadorContactForm() {
             required
             minLength={3}
             maxLength={50}
-            size={10}
             placeholder="Social Handle"
           />
         </div>
@@ -53,7 +50,6 @@ function AmbassadorContactForm() {
             id="proposal"
             name="proposal"
             required
-            cols="30"
             rows="4"
             maxLength="2000"
             placeholder="Proposal"
