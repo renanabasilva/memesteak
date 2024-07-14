@@ -170,3 +170,21 @@ textarea {
 li {
   list-style: none;
 }
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--green) #000;
+}
+
+* {
+  scrollbar-track-color: #000;
+  scrollbar-thumb-color: var(--green);
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+*::-moz-scrollbar-thumb:hover {
+  background-color: var(--greenHover);
+}

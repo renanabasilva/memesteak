@@ -8,16 +8,6 @@ import memesteakPlaceholder from "../../assets/images/memesteak_placeholder.png"
 
 const cards = [
   {
-    project: "TBA",
-    ticker: "TBA",
-    chain: "TBA",
-    price: "TBA",
-    ido_date: "TBA",
-    tge: "TBA",
-    vesting: "TBA",
-    img: memesteakPlaceholder,
-  },
-  {
     project: "MEMESTEAK",
     ticker: "$STEAK",
     chain: "Chain",
@@ -26,6 +16,16 @@ const cards = [
     tge: "TBA",
     vesting: "TBA",
     img: memesteakJump,
+  },
+  {
+    project: "TBA",
+    ticker: "TBA",
+    chain: "TBA",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
+    img: memesteakPlaceholder,
   },
   {
     project: "TBA",

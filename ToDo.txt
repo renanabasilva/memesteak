@@ -1,7 +1,5 @@
 GERAL
 
-  - Criar versão para mobile
-
 ---
 
 LANDING PAGE
@@ -29,11 +27,4 @@ COMPONENTES
   formulário
     - Criar função para submissão de formulário
     - Recaptcha?
-
-  ArrowNavigation
-    - Adicionar funcionalidade para o focus se manter no popup
-    - Focus voltar para o item ativo dentro do container
-
-Contact Us:
-
-With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io
+    - With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io
