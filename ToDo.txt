@@ -28,3 +28,28 @@ COMPONENTES
     - Criar função para submissão de formulário
     - Recaptcha?
     - With a send button at the bottom - this would need to forward the applicants to our email: Team@MemeSteak.io
+
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+  $name = addslashes($_POST['name']);
+  $telegram = addslashes($_POST['telegram']);
+  $email = addslashes($_POST['email']);
+  $description = addslashes($_POST['description']);
+
+  $to = "renanaba.dev@gmail.com";
+  $subject = "MemeSteak - New project contact";
+
+  $body = "Name: ".$name."\n"."Telegram Handle: ".$telegram."\n"."E-mail: ".$email."\n\n"."Project Description: ".$description;
+
+  $header = "From: steakpad@memesteak.io"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
+
+  if(mail($to,$subject,$body,$header)){
+    echo("Submit successful");
+  } else{
+    echo("Error! Try again later.");
+  }
+?>
