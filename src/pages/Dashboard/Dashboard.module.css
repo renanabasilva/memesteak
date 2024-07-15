@@ -56,15 +56,9 @@
   max-width: 650px;
 }
 
-@media screen and (min-width: 500px) {
-  .mainContainer {
-    margin-top: 2rem;
-  }
-}
-
 @media screen and (min-width: 570px) {
   .contentSection {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .menuContainer {
