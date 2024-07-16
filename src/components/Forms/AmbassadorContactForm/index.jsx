@@ -20,12 +20,12 @@ function AmbassadorContactForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://wheat-hawk-462955.hostingersite.com/formSubmit.php", {
+    fetch("https://memesteak.io/formSubmit.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({ ...formData, form_type: "partnershipContact" }),
     })
       .then((response) => response.json())
       .then((data) => {
