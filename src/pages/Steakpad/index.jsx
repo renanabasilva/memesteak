@@ -2,21 +2,11 @@ import styles from "./Steakpad.module.css";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
 import TokenCard from "../../components/TokenCard";
 import PopUpContainer from "../../components/PopUpContainer";
-import ContactForm from "../../components/ContactForm";
+import ContactForm from "../../components/Forms/ContactForm";
 import memesteakJump from "../../assets/gifs/memesteak_logo_jump.gif";
 import memesteakPlaceholder from "../../assets/images/memesteak_placeholder.png";
 
 const cards = [
-  {
-    project: "TBA",
-    ticker: "TBA",
-    chain: "TBA",
-    price: "TBA",
-    ido_date: "TBA",
-    tge: "TBA",
-    vesting: "TBA",
-    img: memesteakPlaceholder,
-  },
   {
     project: "MEMESTEAK",
     ticker: "$STEAK",
@@ -26,6 +16,16 @@ const cards = [
     tge: "TBA",
     vesting: "TBA",
     img: memesteakJump,
+  },
+  {
+    project: "TBA",
+    ticker: "TBA",
+    chain: "TBA",
+    price: "TBA",
+    ido_date: "TBA",
+    tge: "TBA",
+    vesting: "TBA",
+    img: memesteakPlaceholder,
   },
   {
     project: "TBA",

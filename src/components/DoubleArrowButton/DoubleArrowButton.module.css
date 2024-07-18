@@ -15,21 +15,25 @@
     transition: all 0.2s;
     outline: none;
   }
+}
 
-  &::before {
-    content: "►";
-    margin-right: 10px;
-    position: absolute;
-    left: -25px;
-    animation: bounceLeft 0.5s infinite alternate;
-  }
+@media screen and (min-width: 600px) {
+  .button {
+    &::before {
+      content: "►";
+      margin-right: 10px;
+      position: absolute;
+      left: -25px;
+      animation: bounceLeft 0.5s infinite alternate;
+    }
 
-  &::after {
-    content: "◄";
-    margin-left: 10px;
-    position: absolute;
-    right: -25px;
-    animation: bounceRight 0.5s infinite alternate;
+    &::after {
+      content: "◄";
+      margin-left: 10px;
+      position: absolute;
+      right: -25px;
+      animation: bounceRight 0.5s infinite alternate;
+    }
   }
 }
 
@@ -38,7 +42,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
 
@@ -47,6 +51,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(15px);
+    transform: translateX(10px);
   }
 }

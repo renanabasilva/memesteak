@@ -18,6 +18,13 @@
       position: absolute;
       content: "►";
       left: -30px;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .button {
+    &::before {
       animation: bounceLeft 0.5s infinite alternate;
     }
   }

@@ -2,19 +2,30 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  margin: 0 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .tokenCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 3rem 2rem;
 }
 
 .contactContainer {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 30rem;
+}
+
+@media screen and (min-width: 768px) {
+  .steakpadContainer {
+    margin-top: 2rem;
+  }
 }

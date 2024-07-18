@@ -14,17 +14,19 @@ function TokenCard({
   return (
     <PopUpContainer popUpTarget={<p className="popup-text">COMING SOON...</p>}>
       <button className={styles.tokenCardContainer} tabIndex="0">
-        <img className={styles.tokenCardImg} src={img} alt={project} />
-        <ul>
-          <li>Project: {project}</li>
-          <li>Ticker: {ticker}</li>
-          <li>Chain: {chain}</li>
-          <li>Price: {price}</li>
-          <li>IDO Date: {ido_date}</li>
-          <li>TGE: {tge}</li>
-          <li>Vesting: {vesting}</li>
-          <div className={styles.joinButton}>JOIN POOL</div>
-        </ul>
+        <div className={styles.tokenCardInformationContainer}>
+          <img className={styles.tokenCardImg} src={img} alt={project} />
+          <ul>
+            <li>Project: {project}</li>
+            <li>Ticker: {ticker}</li>
+            <li>Chain: {chain}</li>
+            <li>Price: {price}</li>
+            <li>IDO Date: {ido_date}</li>
+            <li>TGE: {tge}</li>
+            <li>Vesting: {vesting}</li>
+          </ul>
+        </div>
+        <div className={styles.joinButton}>JOIN POOL</div>
       </button>
     </PopUpContainer>
   );

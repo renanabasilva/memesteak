@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./PopUpContainer.module.css";
 
 function PopUpContainer({ children, popUpTarget }) {
@@ -16,6 +16,12 @@ function PopUpContainer({ children, popUpTarget }) {
     if (evt.key === "Enter" && evt.target === document.activeElement)
       setShow(false);
   };
+
+  const closeOnSubmit = () => setShow(false);
+
+  const popUpContent = React.cloneElement(popUpTarget, {
+    onClose: closeOnSubmit,
+  });
 
   useEffect(() => {
     const handleEsc = (evt) => {
@@ -43,7 +49,7 @@ function PopUpContainer({ children, popUpTarget }) {
             >
               &times;
             </span>
-            <div>{popUpTarget}</div>
+            <div>{popUpContent}</div>
           </div>
         </div>
       )}

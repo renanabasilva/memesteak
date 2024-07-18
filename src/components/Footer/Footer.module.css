@@ -10,9 +10,10 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   transform: scale(-1);
-  z-index: 1;
 }
 
-.homeFooter {
-  height: 10rem;
+@media screen and (min-width: 1200px) {
+  .mainContainer {
+    background-image: url("../../assets/bg_walls_lg.png");
+  }
 }

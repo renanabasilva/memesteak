@@ -7,10 +7,10 @@ function PagesHeader({ pageName }) {
   return (
     <div className={styles.mainContainer}>
       <img src={PlainLogo} alt="Memesteak plain logo" />
-      <h1 className={styles.pageTitle}>{pageTitle}</h1>
-      <NavigationLink linkType="internal" link="/dashboard" tabIndex="0" focus>
+      <NavigationLink linkType="internal" link="/dashboard" tabIndex="0">
         BACK TO MENU
       </NavigationLink>
+      <h1 className={styles.pageTitle}>{pageTitle}</h1>
     </div>
   );
 }
