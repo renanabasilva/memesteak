@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { isMobile, isTablet } from "react-device-detect";
 import styles from "./Vaults.module.css";
 import VaultIcon from "../../components/VaultIcon";
 import SingleArrowButton from "../../components/SingleArrowButton";
+import DoubleArrowButton from "../../components/DoubleArrowButton";
 import PopUpContainer from "../../components/PopUpContainer";
 
 const vaults = [
@@ -45,6 +47,8 @@ const vaults = [
 function Vaults() {
   const [activeVault, setActiveVault] = useState(vaults[0]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const isTouchDevice = isMobile || isTablet;
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -138,7 +142,11 @@ function Vaults() {
             <PopUpContainer
               popUpTarget={<p className="popup-text">COMING SOON...</p>}
             >
-              <SingleArrowButton>ENTER STEAK</SingleArrowButton>
+              {isTouchDevice ? (
+                <DoubleArrowButton>ENTER STEAK</DoubleArrowButton>
+              ) : (
+                <SingleArrowButton>ENTER STEAK</SingleArrowButton>
+              )}
             </PopUpContainer>
           </div>
         </div>

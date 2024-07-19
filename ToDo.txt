@@ -12,6 +12,8 @@ DASHBOARD
 
 VAULTS
 
+ - popup coming soon diminuir margens para mobile
+
 ---
 
 STEAKPAD
@@ -23,6 +25,8 @@ COOKBOOK
 ---
 
 COMPONENTES
+
+  - Quando o email for enviado, a "mensagem enviada" será do site e não popup do navegador.
 
 <?php
 
