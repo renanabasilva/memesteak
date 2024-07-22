@@ -15,8 +15,8 @@
 .popUpContent {
   position: relative;
   margin: 1rem;
-  padding: 1rem 1rem;
-  padding-top: 4rem;
+  padding: 4rem 1rem;
+  /* padding-top: 4rem; */
   max-width: 90vw;
   max-height: 80vh;
   border: 2px solid var(--green);

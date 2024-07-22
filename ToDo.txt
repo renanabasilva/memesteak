@@ -12,8 +12,6 @@ DASHBOARD
 
 VAULTS
 
- - popup coming soon diminuir margens para mobile
-
 ---
 
 STEAKPAD
