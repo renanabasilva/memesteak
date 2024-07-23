@@ -3,16 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
   width: 20rem;
   font-size: 0.9rem;
 
+  border: 7px double #8b8fae;
+  border-radius: 5px;
+  padding: 1rem;
+
   &:hover,
   &:focus {
     outline: none;
+
+    border-color: var(--greenHover);
+    box-shadow: 0 0 10px var(--greenHover);
+
+    .projectTitle {
+      color: var(--greenHover);
+    }
 
     .joinButton {
       color: var(--greenHover);
@@ -37,8 +48,14 @@
 .tokenCardInformationContainer {
   display: flex;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   text-align: justify;
+}
+
+.projectTitle {
+  font-family: var(--titleFont);
+  color: var(--green);
+  font-size: 1.1rem;
 }
 
 .joinButton {

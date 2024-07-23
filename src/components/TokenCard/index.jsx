@@ -17,7 +17,7 @@ function TokenCard({
         <div className={styles.tokenCardInformationContainer}>
           <img className={styles.tokenCardImg} src={img} alt={project} />
           <ul>
-            <li>Project: {project}</li>
+            <li className={styles.projectTitle}>{project}</li>
             <li>Ticker: {ticker}</li>
             <li>Chain: {chain}</li>
             <li>Price: {price}</li>
