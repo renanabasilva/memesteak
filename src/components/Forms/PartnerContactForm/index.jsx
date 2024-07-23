@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../ContactForm.module.css";
 import SingleArrowButton from "../../SingleArrowButton";
 
-function AmbassadorContactForm({ onClose }) {
+function PartnerContactForm({ onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     telegram: "",
@@ -120,4 +120,4 @@ function AmbassadorContactForm({ onClose }) {
   );
 }
 
-export default AmbassadorContactForm;
+export default PartnerContactForm;

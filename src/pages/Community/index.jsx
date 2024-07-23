@@ -5,7 +5,7 @@ import xIcon from "../../assets/images/socials_x_200.png";
 import mailIcon from "../../assets/images/socials_mail_200.png";
 import PopUpContainer from "../../components/PopUpContainer";
 import DoubleArrowButton from "../../components/DoubleArrowButton";
-import AmbassadorContactForm from "../../components/Forms/AmbassadorContactForm";
+import PartnerContactForm from "../../components/Forms/PartnerContactForm";
 
 const socialNetworks = [
   {
@@ -48,13 +48,13 @@ function Community() {
             />
           ))}
         </div>
-        <div className={styles.ambassadorContainer}>
+        <div className={styles.partnerContainer}>
           <p>
             If you're an ambassador or marketer looking to partner with us,
             contact us below to start the conversation. Explore strategic
             opportunities with us!
           </p>
-          <PopUpContainer popUpTarget={<AmbassadorContactForm />}>
+          <PopUpContainer popUpTarget={<PartnerContactForm />}>
             <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
           </PopUpContainer>
         </div>
