@@ -1,13 +1,14 @@
 import { useState } from "react";
-import styles from "../ContactForm.module.css";
+import styles from "../Forms.module.css";
 import SingleArrowButton from "../../SingleArrowButton";
 
-function PartnerContactForm({ onClose }) {
+function PartnerContactForm() {
+  const [successPopUp, setSuccessPopUp] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    telegram: "",
-    email: "",
-    description: "",
+    agency: "",
+    social: "",
+    proposal: "",
   });
 
   const handleChange = (e) => {
@@ -30,16 +31,13 @@ function PartnerContactForm({ onClose }) {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          alert("Email successfully sent!");
           setFormData({
             name: "",
-            telegram: "",
-            email: "",
-            description: "",
+            agency: "",
+            social: "",
+            proposal: "",
           });
-          if (onClose) {
-            onClose();
-          }
+          setSuccessPopUp(true);
         } else {
           alert("There was a problem sending the email: " + data.message);
         }
@@ -54,68 +52,72 @@ function PartnerContactForm({ onClose }) {
 
   return (
     <div className={styles.mainContainer}>
-      <form
-        className={styles.formContainer}
-        onSubmit={handleSubmit}
-        autoComplete="on"
-      >
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            minLength={3}
-            maxLength={50}
-            pattern="([a-zA-Z]+( [a-zA-Z]+)*)"
-            placeholder="Name"
-          />
-        </div>
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
-            id="agency"
-            name="agency"
-            value={formData.agency}
-            onChange={handleChange}
-            required
-            minLength={3}
-            maxLength={50}
-            placeholder="Agency"
-          />
-        </div>
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
-            id="social"
-            name="social"
-            value={formData.social}
-            onChange={handleChange}
-            required
-            minLength={3}
-            maxLength={50}
-            placeholder="Social Handle"
-          />
-        </div>
-        <div className={styles.inputContainer}>
-          <textarea
-            type="text"
-            id="proposal"
-            name="proposal"
-            value={formData.proposal}
-            onChange={handleChange}
-            required
-            rows="4"
-            maxLength="2000"
-            placeholder="Proposal"
-          ></textarea>
-        </div>
-        <div className={styles.formButtonContainer}>
-          <SingleArrowButton>SEND</SingleArrowButton>
-        </div>
-      </form>
+      {successPopUp ? (
+        <p className="submit-success">Email successfully sent!</p>
+      ) : (
+        <form
+          className={styles.formContainer}
+          onSubmit={handleSubmit}
+          autoComplete="on"
+        >
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              minLength={3}
+              maxLength={50}
+              pattern="([a-zA-Z]+( [a-zA-Z]+)*)"
+              placeholder="Name"
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              id="agency"
+              name="agency"
+              value={formData.agency}
+              onChange={handleChange}
+              required
+              minLength={3}
+              maxLength={50}
+              placeholder="Agency"
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              id="social"
+              name="social"
+              value={formData.social}
+              onChange={handleChange}
+              required
+              minLength={3}
+              maxLength={50}
+              placeholder="Social Handle"
+            />
+          </div>
+          <div className={styles.inputContainer}>
+            <textarea
+              type="text"
+              id="proposal"
+              name="proposal"
+              value={formData.proposal}
+              onChange={handleChange}
+              required
+              rows="4"
+              maxLength="2000"
+              placeholder="Proposal"
+            ></textarea>
+          </div>
+          <div className={styles.formButtonContainer}>
+            <SingleArrowButton>SEND</SingleArrowButton>
+          </div>
+        </form>
+      )}
     </div>
   );
 }

@@ -24,7 +24,6 @@ COOKBOOK
 
 COMPONENTES
 
-  - Quando o email for enviado, a "mensagem enviada" será do site e não popup do navegador.
 
 <?php
 
@@ -117,3 +116,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
 }
+
+  // const closeOnSubmit = () => setShow(false);
+  // const popUpContent = React.cloneElement(popUpTarget, {
+  //   onClose: closeOnSubmit,
+  // });
+

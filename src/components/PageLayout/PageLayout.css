@@ -31,6 +31,13 @@
   font-size: 1.5rem;
 }
 
+.submit-success {
+  font-family: var(--titleFont);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
 @media  (min-width: 700px) {
   .popup-text {
     font-size: 2.5rem;

@@ -17,12 +17,6 @@ function PopUpContainer({ children, popUpTarget }) {
       setShow(false);
   };
 
-  const closeOnSubmit = () => setShow(false);
-
-  const popUpContent = React.cloneElement(popUpTarget, {
-    onClose: closeOnSubmit,
-  });
-
   useEffect(() => {
     const handleEsc = (evt) => {
       if (evt.keyCode === 27) setShow(false);
@@ -49,7 +43,7 @@ function PopUpContainer({ children, popUpTarget }) {
             >
               &times;
             </span>
-            <div>{popUpContent}</div>
+            <div>{popUpTarget}</div>
           </div>
         </div>
       )}
