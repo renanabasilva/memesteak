@@ -106,12 +106,10 @@ function Dashboard() {
           </div>
         )}
         <div className={styles.description}>
-          <p>
+          <p className="text-box">
             Welcome to Memesteak, the digital dojo where we turn staking into a
-            extreme sport. Here, we crank up the heat and turn up the steaks.
-            Got the nerve to lock your tokens, or are you just here to window
-            shop? Strap in and steak up - the arena is set, and the coins are
-            waiting. Are you ready to play?
+            extreme sport. Strap in and steak up - the arena is set, and the
+            coins are waiting. Are you ready to play?
           </p>
         </div>
       </section>

@@ -43,10 +43,8 @@ function Steakpad() {
   return (
     <main className="main-container">
       <section className={`content-section ${styles.steakpadContainer}`}>
-        <p>
+        <p className="text-box">
           Unleash the power of staking with our SteakPad: Stake to Win.
-          Questions? Connect with our community on Telegram or check the
-          CookBook for a full breakdown.
         </p>
         <div
           className={`horizontal-container ${styles.tokenCardContainer}`}
@@ -66,7 +64,7 @@ function Steakpad() {
             />
           ))}
         </div>
-        <div className={styles.contactContainer}>
+        <div className={`${styles.contactContainer} text-box`}>
           <p>
             Ready to launch your project? Reach out to our team, share your
             vision, and step onto the SteakPad.

@@ -24,7 +24,6 @@
       margin-right: 10px;
       position: absolute;
       left: -25px;
-      animation: bounceLeft 0.5s infinite alternate;
     }
 
     &::after {
@@ -32,6 +31,17 @@
       margin-left: 10px;
       position: absolute;
       right: -25px;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .button {
+    &::before {
+      animation: bounceLeft 0.5s infinite alternate;
+    }
+
+    &::after {
       animation: bounceRight 0.5s infinite alternate;
     }
   }

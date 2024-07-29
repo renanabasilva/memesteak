@@ -132,7 +132,9 @@ function Vaults() {
               src={require(`../../assets/gifs/hand_${activeVault.img}_transform.gif`)}
               alt={activeVault.name}
             />
-            <div className={styles.vaultsDescriptionSideContainer}>
+            <div
+              className={`${styles.vaultsDescriptionSideContainer} text-box`}
+            >
               <h5>{activeVault.name}</h5>
               <h6>Steak Period: {activeVault.period}</h6>
               <p>{activeVault.description}</p>

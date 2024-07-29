@@ -8,8 +8,19 @@
   margin-bottom: 2rem;
 }
 
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  p {
+    margin: 0;
+  }
+}
+
 .socialIconsContainer {
   display: flex;
+  justify-content: center;
   gap: 2.5rem;
   a:hover,
   a:focus {
@@ -24,4 +35,8 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  p {
+    margin: 0;
+  }
 }
