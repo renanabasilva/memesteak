@@ -57,7 +57,7 @@ function Community() {
             opportunities with us!
           </p>
           <PopUpContainer popUpTarget={<PartnerContactForm />}>
-            <DoubleArrowButton>JOIN THE COMMUNITY</DoubleArrowButton>
+            <DoubleArrowButton>JOIN COMMUNITY</DoubleArrowButton>
           </PopUpContainer>
         </div>
       </section>
